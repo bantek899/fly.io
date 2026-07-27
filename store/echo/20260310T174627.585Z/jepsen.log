@@ -1,0 +1,258 @@
+2026-03-10 17:46:27,605{GMT}	INFO	[jepsen test runner] jepsen.core: Command line:
+lein run test -w echo --bin run.sh generate --node-count 1 --time-limit 10
+2026-03-10 17:46:27,682{GMT}	INFO	[jepsen test runner] jepsen.core: Running test:
+{:args ["generate"]
+ :remote
+ #jepsen.control.retry.Remote{:remote #jepsen.control.scp.Remote{:cmd-remote #jepsen.control.sshj.SSHJRemote{:concurrency-limit 6,
+                                                                                                             :conn-spec nil,
+                                                                                                             :client nil,
+                                                                                                             :semaphore nil},
+                                                                 :conn-spec nil},
+                              :conn nil}
+ :log-net-send false
+ :node-count 1
+ :availability nil
+ :max-txn-length 4
+ :concurrency 1
+ :db
+ #object[maelstrom.db$db$reify__16142
+         "0x52268f73"
+         "maelstrom.db$db$reify__16142@52268f73"]
+ :max-writes-per-key 16
+ :leave-db-running? false
+ :name "echo"
+ :logging-json? false
+ :start-time
+ #object[org.joda.time.DateTime "0x3938e876" "2026-03-10T17:46:27.585Z"]
+ :nemesis-interval 10
+ :net
+ #object[maelstrom.net$jepsen_net$reify__15251
+         "0x70b2819f"
+         "maelstrom.net$jepsen_net$reify__15251@70b2819f"]
+ :client
+ #object[maelstrom.workload.echo$client$reify__16863
+         "0x65dac812"
+         "maelstrom.workload.echo$client$reify__16863@65dac812"]
+ :barrier
+ #object[java.util.concurrent.CyclicBarrier
+         "0x3619ecd"
+         "java.util.concurrent.CyclicBarrier@3619ecd"]
+ :log-stderr false
+ :pure-generators true
+ :ssh {:dummy? true}
+ :rate 5
+ :checker
+ #object[jepsen.checker$compose$reify__11881
+         "0x7de4bd8f"
+         "jepsen.checker$compose$reify__11881@7de4bd8f"]
+ :argv
+ ("test"
+  "-w"
+  "echo"
+  "--bin"
+  "run.sh"
+  "generate"
+  "--node-count"
+  "1"
+  "--time-limit"
+  "10")
+ :nemesis
+ (jepsen.nemesis.ReflCompose
+  {:fm {:start-partition 0,
+        :stop-partition 0,
+        :kill 1,
+        :start 1,
+        :pause 1,
+        :resume 1},
+   :nemeses [#unprintable "jepsen.nemesis.combined$partition_nemesis$reify__16416@193e65d5"
+             #unprintable "jepsen.nemesis.combined$db_nemesis$reify__16397@2a97b4b8"]})
+ :nodes ["n0"]
+ :test-count 1
+ :latency {:mean 0, :dist :constant}
+ :bin "run.sh"
+ :generator
+ (jepsen.generator.TimeLimit
+  {:limit 10000000000,
+   :cutoff nil,
+   :gen (jepsen.generator.Any
+         {:gens [(jepsen.generator.OnThreads
+                  {:f #{:nemesis},
+                   :context-filter #object[jepsen.generator.context$make_thread_filter$lazy_filter__9167
+                                           "0x10e28d97"
+                                           "jepsen.generator.context$make_thread_filter$lazy_filter__9167@10e28d97"],
+                   :gen nil})
+                 (jepsen.generator.OnThreads
+                  {:f #jepsen.generator.context.AllBut{:element :nemesis},
+                   :context-filter #object[jepsen.generator.context$make_thread_filter$lazy_filter__9167
+                                           "0x37d43b9b"
+                                           "jepsen.generator.context$make_thread_filter$lazy_filter__9167@37d43b9b"],
+                   :gen (jepsen.generator.Stagger
+                         {:dt 400000000,
+                          :next-time nil,
+                          :gen (jepsen.generator.EachThread
+                                {:fresh-gen #object[maelstrom.workload.echo$workload$fn__16882
+                                                    "0x28ba90c1"
+                                                    "maelstrom.workload.echo$workload$fn__16882@28ba90c1"],
+                                 :context-filters #object[clojure.core$promise$reify__8591
+                                                          "0x71cf6e8c"
+                                                          {:status :pending,
+                                                           :val nil}],
+                                 :gens {}})})})]})})
+ :log-net-recv false
+ :os
+ #object[maelstrom.net$jepsen_os$reify__15254
+         "0x7545cb17"
+         "maelstrom.net$jepsen_os$reify__15254@7545cb17"]
+ :time-limit 10
+ :workload :echo
+ :consistency-models [:strict-serializable]
+ :topology :grid}
+
+2026-03-10 17:46:28,940{GMT}	INFO	[jepsen node n0] maelstrom.net: Starting Maelstrom network
+2026-03-10 17:46:28,941{GMT}	INFO	[jepsen test runner] jepsen.db: Tearing down DB
+2026-03-10 17:46:28,943{GMT}	INFO	[jepsen test runner] jepsen.db: Setting up DB
+2026-03-10 17:46:28,946{GMT}	INFO	[jepsen node n0] maelstrom.service: Starting services: (lin-kv lin-tso lww-kv seq-kv)
+2026-03-10 17:46:28,949{GMT}	INFO	[jepsen node n0] maelstrom.db: Setting up n0
+2026-03-10 17:46:28,950{GMT}	INFO	[jepsen node n0] maelstrom.process: launching run.sh ["generate"]
+2026-03-10 17:46:29,047{GMT}	INFO	[jepsen test runner] jepsen.core: Relative time begins now
+2026-03-10 17:46:29,059{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:invoke	:echo	"Please echo 93"
+2026-03-10 17:46:29,112{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:info	:echo	"Please echo 93"	[:crash "Unexpected exception handling (msg c2 n0 {\"echo\":\"Please echo 93\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:29,413{GMT}	INFO	[jepsen worker 0] jepsen.util: 1	:invoke	:echo	"Please echo 107"
+2026-03-10 17:46:29,417{GMT}	INFO	[jepsen worker 0] jepsen.util: 1	:info	:echo	"Please echo 107"	[:crash "Unexpected exception handling (msg c3 n0 {\"echo\":\"Please echo 107\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:29,443{GMT}	INFO	[jepsen worker 0] jepsen.util: 2	:invoke	:echo	"Please echo 90"
+2026-03-10 17:46:29,446{GMT}	INFO	[jepsen worker 0] jepsen.util: 2	:info	:echo	"Please echo 90"	[:crash "Unexpected exception handling (msg c4 n0 {\"echo\":\"Please echo 90\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:29,508{GMT}	INFO	[jepsen worker 0] jepsen.util: 3	:invoke	:echo	"Please echo 50"
+2026-03-10 17:46:29,513{GMT}	INFO	[jepsen worker 0] jepsen.util: 3	:info	:echo	"Please echo 50"	[:crash "Unexpected exception handling (msg c5 n0 {\"echo\":\"Please echo 50\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:29,668{GMT}	INFO	[jepsen worker 0] jepsen.util: 4	:invoke	:echo	"Please echo 19"
+2026-03-10 17:46:29,672{GMT}	INFO	[jepsen worker 0] jepsen.util: 4	:info	:echo	"Please echo 19"	[:crash "Unexpected exception handling (msg c6 n0 {\"echo\":\"Please echo 19\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:29,767{GMT}	INFO	[jepsen worker 0] jepsen.util: 5	:invoke	:echo	"Please echo 30"
+2026-03-10 17:46:29,771{GMT}	INFO	[jepsen worker 0] jepsen.util: 5	:info	:echo	"Please echo 30"	[:crash "Unexpected exception handling (msg c7 n0 {\"echo\":\"Please echo 30\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:30,097{GMT}	INFO	[jepsen worker 0] jepsen.util: 6	:invoke	:echo	"Please echo 28"
+2026-03-10 17:46:30,101{GMT}	INFO	[jepsen worker 0] jepsen.util: 6	:info	:echo	"Please echo 28"	[:crash "Unexpected exception handling (msg c8 n0 {\"echo\":\"Please echo 28\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:30,221{GMT}	INFO	[jepsen worker 0] jepsen.util: 7	:invoke	:echo	"Please echo 60"
+2026-03-10 17:46:30,224{GMT}	INFO	[jepsen worker 0] jepsen.util: 7	:info	:echo	"Please echo 60"	[:crash "Unexpected exception handling (msg c9 n0 {\"echo\":\"Please echo 60\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:30,442{GMT}	INFO	[jepsen worker 0] jepsen.util: 8	:invoke	:echo	"Please echo 79"
+2026-03-10 17:46:30,445{GMT}	INFO	[jepsen worker 0] jepsen.util: 8	:info	:echo	"Please echo 79"	[:crash "Unexpected exception handling (msg c10 n0 {\"echo\":\"Please echo 79\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:30,675{GMT}	INFO	[jepsen worker 0] jepsen.util: 9	:invoke	:echo	"Please echo 6"
+2026-03-10 17:46:30,678{GMT}	INFO	[jepsen worker 0] jepsen.util: 9	:info	:echo	"Please echo 6"	[:crash "Unexpected exception handling (msg c11 n0 {\"echo\":\"Please echo 6\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:30,733{GMT}	INFO	[jepsen worker 0] jepsen.util: 10	:invoke	:echo	"Please echo 111"
+2026-03-10 17:46:30,736{GMT}	INFO	[jepsen worker 0] jepsen.util: 10	:info	:echo	"Please echo 111"	[:crash "Unexpected exception handling (msg c12 n0 {\"echo\":\"Please echo 111\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:30,950{GMT}	INFO	[jepsen worker 0] jepsen.util: 11	:invoke	:echo	"Please echo 82"
+2026-03-10 17:46:30,953{GMT}	INFO	[jepsen worker 0] jepsen.util: 11	:info	:echo	"Please echo 82"	[:crash "Unexpected exception handling (msg c13 n0 {\"echo\":\"Please echo 82\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:31,032{GMT}	INFO	[jepsen worker 0] jepsen.util: 12	:invoke	:echo	"Please echo 84"
+2026-03-10 17:46:31,035{GMT}	INFO	[jepsen worker 0] jepsen.util: 12	:info	:echo	"Please echo 84"	[:crash "Unexpected exception handling (msg c14 n0 {\"echo\":\"Please echo 84\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:31,291{GMT}	INFO	[jepsen worker 0] jepsen.util: 13	:invoke	:echo	"Please echo 91"
+2026-03-10 17:46:31,294{GMT}	INFO	[jepsen worker 0] jepsen.util: 13	:info	:echo	"Please echo 91"	[:crash "Unexpected exception handling (msg c15 n0 {\"echo\":\"Please echo 91\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:31,399{GMT}	INFO	[jepsen worker 0] jepsen.util: 14	:invoke	:echo	"Please echo 96"
+2026-03-10 17:46:31,402{GMT}	INFO	[jepsen worker 0] jepsen.util: 14	:info	:echo	"Please echo 96"	[:crash "Unexpected exception handling (msg c16 n0 {\"echo\":\"Please echo 96\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:31,613{GMT}	INFO	[jepsen worker 0] jepsen.util: 15	:invoke	:echo	"Please echo 21"
+2026-03-10 17:46:31,616{GMT}	INFO	[jepsen worker 0] jepsen.util: 15	:info	:echo	"Please echo 21"	[:crash "Unexpected exception handling (msg c17 n0 {\"echo\":\"Please echo 21\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:31,922{GMT}	INFO	[jepsen worker 0] jepsen.util: 16	:invoke	:echo	"Please echo 21"
+2026-03-10 17:46:31,925{GMT}	INFO	[jepsen worker 0] jepsen.util: 16	:info	:echo	"Please echo 21"	[:crash "Unexpected exception handling (msg c18 n0 {\"echo\":\"Please echo 21\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:32,118{GMT}	INFO	[jepsen worker 0] jepsen.util: 17	:invoke	:echo	"Please echo 18"
+2026-03-10 17:46:32,121{GMT}	INFO	[jepsen worker 0] jepsen.util: 17	:info	:echo	"Please echo 18"	[:crash "Unexpected exception handling (msg c19 n0 {\"echo\":\"Please echo 18\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:32,217{GMT}	INFO	[jepsen worker 0] jepsen.util: 18	:invoke	:echo	"Please echo 35"
+2026-03-10 17:46:32,220{GMT}	INFO	[jepsen worker 0] jepsen.util: 18	:info	:echo	"Please echo 35"	[:crash "Unexpected exception handling (msg c20 n0 {\"echo\":\"Please echo 35\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:32,410{GMT}	INFO	[jepsen worker 0] jepsen.util: 19	:invoke	:echo	"Please echo 97"
+2026-03-10 17:46:32,412{GMT}	INFO	[jepsen worker 0] jepsen.util: 19	:info	:echo	"Please echo 97"	[:crash "Unexpected exception handling (msg c21 n0 {\"echo\":\"Please echo 97\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:32,746{GMT}	INFO	[jepsen worker 0] jepsen.util: 20	:invoke	:echo	"Please echo 13"
+2026-03-10 17:46:32,749{GMT}	INFO	[jepsen worker 0] jepsen.util: 20	:info	:echo	"Please echo 13"	[:crash "Unexpected exception handling (msg c22 n0 {\"echo\":\"Please echo 13\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:33,108{GMT}	INFO	[jepsen worker 0] jepsen.util: 21	:invoke	:echo	"Please echo 92"
+2026-03-10 17:46:33,111{GMT}	INFO	[jepsen worker 0] jepsen.util: 21	:info	:echo	"Please echo 92"	[:crash "Unexpected exception handling (msg c23 n0 {\"echo\":\"Please echo 92\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:33,215{GMT}	INFO	[jepsen worker 0] jepsen.util: 22	:invoke	:echo	"Please echo 60"
+2026-03-10 17:46:33,218{GMT}	INFO	[jepsen worker 0] jepsen.util: 22	:info	:echo	"Please echo 60"	[:crash "Unexpected exception handling (msg c24 n0 {\"echo\":\"Please echo 60\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:33,507{GMT}	INFO	[jepsen worker 0] jepsen.util: 23	:invoke	:echo	"Please echo 77"
+2026-03-10 17:46:33,510{GMT}	INFO	[jepsen worker 0] jepsen.util: 23	:info	:echo	"Please echo 77"	[:crash "Unexpected exception handling (msg c25 n0 {\"echo\":\"Please echo 77\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:33,660{GMT}	INFO	[jepsen worker 0] jepsen.util: 24	:invoke	:echo	"Please echo 113"
+2026-03-10 17:46:33,663{GMT}	INFO	[jepsen worker 0] jepsen.util: 24	:info	:echo	"Please echo 113"	[:crash "Unexpected exception handling (msg c26 n0 {\"echo\":\"Please echo 113\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:33,813{GMT}	INFO	[jepsen worker 0] jepsen.util: 25	:invoke	:echo	"Please echo 38"
+2026-03-10 17:46:33,817{GMT}	INFO	[jepsen worker 0] jepsen.util: 25	:info	:echo	"Please echo 38"	[:crash "Unexpected exception handling (msg c27 n0 {\"echo\":\"Please echo 38\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:34,000{GMT}	INFO	[jepsen worker 0] jepsen.util: 26	:invoke	:echo	"Please echo 75"
+2026-03-10 17:46:34,002{GMT}	INFO	[jepsen worker 0] jepsen.util: 26	:info	:echo	"Please echo 75"	[:crash "Unexpected exception handling (msg c28 n0 {\"echo\":\"Please echo 75\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:34,079{GMT}	INFO	[jepsen worker 0] jepsen.util: 27	:invoke	:echo	"Please echo 34"
+2026-03-10 17:46:34,082{GMT}	INFO	[jepsen worker 0] jepsen.util: 27	:info	:echo	"Please echo 34"	[:crash "Unexpected exception handling (msg c29 n0 {\"echo\":\"Please echo 34\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:34,189{GMT}	INFO	[jepsen worker 0] jepsen.util: 28	:invoke	:echo	"Please echo 12"
+2026-03-10 17:46:34,192{GMT}	INFO	[jepsen worker 0] jepsen.util: 28	:info	:echo	"Please echo 12"	[:crash "Unexpected exception handling (msg c30 n0 {\"echo\":\"Please echo 12\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:34,583{GMT}	INFO	[jepsen worker 0] jepsen.util: 29	:invoke	:echo	"Please echo 49"
+2026-03-10 17:46:34,586{GMT}	INFO	[jepsen worker 0] jepsen.util: 29	:info	:echo	"Please echo 49"	[:crash "Unexpected exception handling (msg c31 n0 {\"echo\":\"Please echo 49\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:34,902{GMT}	INFO	[jepsen worker 0] jepsen.util: 30	:invoke	:echo	"Please echo 54"
+2026-03-10 17:46:34,905{GMT}	INFO	[jepsen worker 0] jepsen.util: 30	:info	:echo	"Please echo 54"	[:crash "Unexpected exception handling (msg c32 n0 {\"echo\":\"Please echo 54\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:35,117{GMT}	INFO	[jepsen worker 0] jepsen.util: 31	:invoke	:echo	"Please echo 98"
+2026-03-10 17:46:35,120{GMT}	INFO	[jepsen worker 0] jepsen.util: 31	:info	:echo	"Please echo 98"	[:crash "Unexpected exception handling (msg c33 n0 {\"echo\":\"Please echo 98\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:35,326{GMT}	INFO	[jepsen worker 0] jepsen.util: 32	:invoke	:echo	"Please echo 69"
+2026-03-10 17:46:35,329{GMT}	INFO	[jepsen worker 0] jepsen.util: 32	:info	:echo	"Please echo 69"	[:crash "Unexpected exception handling (msg c34 n0 {\"echo\":\"Please echo 69\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:35,579{GMT}	INFO	[jepsen worker 0] jepsen.util: 33	:invoke	:echo	"Please echo 81"
+2026-03-10 17:46:35,582{GMT}	INFO	[jepsen worker 0] jepsen.util: 33	:info	:echo	"Please echo 81"	[:crash "Unexpected exception handling (msg c35 n0 {\"echo\":\"Please echo 81\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:35,947{GMT}	INFO	[jepsen worker 0] jepsen.util: 34	:invoke	:echo	"Please echo 123"
+2026-03-10 17:46:35,950{GMT}	INFO	[jepsen worker 0] jepsen.util: 34	:info	:echo	"Please echo 123"	[:crash "Unexpected exception handling (msg c36 n0 {\"echo\":\"Please echo 123\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:36,067{GMT}	INFO	[jepsen worker 0] jepsen.util: 35	:invoke	:echo	"Please echo 24"
+2026-03-10 17:46:36,070{GMT}	INFO	[jepsen worker 0] jepsen.util: 35	:info	:echo	"Please echo 24"	[:crash "Unexpected exception handling (msg c37 n0 {\"echo\":\"Please echo 24\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:36,297{GMT}	INFO	[jepsen worker 0] jepsen.util: 36	:invoke	:echo	"Please echo 0"
+2026-03-10 17:46:36,300{GMT}	INFO	[jepsen worker 0] jepsen.util: 36	:info	:echo	"Please echo 0"	[:crash "Unexpected exception handling (msg c38 n0 {\"echo\":\"Please echo 0\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:36,592{GMT}	INFO	[jepsen worker 0] jepsen.util: 37	:invoke	:echo	"Please echo 74"
+2026-03-10 17:46:36,594{GMT}	INFO	[jepsen worker 0] jepsen.util: 37	:info	:echo	"Please echo 74"	[:crash "Unexpected exception handling (msg c39 n0 {\"echo\":\"Please echo 74\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:36,678{GMT}	INFO	[jepsen worker 0] jepsen.util: 38	:invoke	:echo	"Please echo 37"
+2026-03-10 17:46:36,681{GMT}	INFO	[jepsen worker 0] jepsen.util: 38	:info	:echo	"Please echo 37"	[:crash "Unexpected exception handling (msg c40 n0 {\"echo\":\"Please echo 37\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:36,888{GMT}	INFO	[jepsen worker 0] jepsen.util: 39	:invoke	:echo	"Please echo 71"
+2026-03-10 17:46:36,891{GMT}	INFO	[jepsen worker 0] jepsen.util: 39	:info	:echo	"Please echo 71"	[:crash "Unexpected exception handling (msg c41 n0 {\"echo\":\"Please echo 71\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:37,151{GMT}	INFO	[jepsen worker 0] jepsen.util: 40	:invoke	:echo	"Please echo 0"
+2026-03-10 17:46:37,153{GMT}	INFO	[jepsen worker 0] jepsen.util: 40	:info	:echo	"Please echo 0"	[:crash "Unexpected exception handling (msg c42 n0 {\"echo\":\"Please echo 0\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:37,229{GMT}	INFO	[jepsen worker 0] jepsen.util: 41	:invoke	:echo	"Please echo 104"
+2026-03-10 17:46:37,232{GMT}	INFO	[jepsen worker 0] jepsen.util: 41	:info	:echo	"Please echo 104"	[:crash "Unexpected exception handling (msg c43 n0 {\"echo\":\"Please echo 104\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:37,373{GMT}	INFO	[jepsen worker 0] jepsen.util: 42	:invoke	:echo	"Please echo 94"
+2026-03-10 17:46:37,376{GMT}	INFO	[jepsen worker 0] jepsen.util: 42	:info	:echo	"Please echo 94"	[:crash "Unexpected exception handling (msg c44 n0 {\"echo\":\"Please echo 94\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:37,576{GMT}	INFO	[jepsen worker 0] jepsen.util: 43	:invoke	:echo	"Please echo 110"
+2026-03-10 17:46:37,579{GMT}	INFO	[jepsen worker 0] jepsen.util: 43	:info	:echo	"Please echo 110"	[:crash "Unexpected exception handling (msg c45 n0 {\"echo\":\"Please echo 110\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:37,579{GMT}	INFO	[jepsen worker 0] jepsen.util: 44	:invoke	:echo	"Please echo 96"
+2026-03-10 17:46:37,582{GMT}	INFO	[jepsen worker 0] jepsen.util: 44	:info	:echo	"Please echo 96"	[:crash "Unexpected exception handling (msg c46 n0 {\"echo\":\"Please echo 96\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:37,863{GMT}	INFO	[jepsen worker 0] jepsen.util: 45	:invoke	:echo	"Please echo 36"
+2026-03-10 17:46:37,865{GMT}	INFO	[jepsen worker 0] jepsen.util: 45	:info	:echo	"Please echo 36"	[:crash "Unexpected exception handling (msg c47 n0 {\"echo\":\"Please echo 36\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:37,866{GMT}	INFO	[jepsen worker 0] jepsen.util: 46	:invoke	:echo	"Please echo 2"
+2026-03-10 17:46:37,869{GMT}	INFO	[jepsen worker 0] jepsen.util: 46	:info	:echo	"Please echo 2"	[:crash "Unexpected exception handling (msg c48 n0 {\"echo\":\"Please echo 2\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:38,075{GMT}	INFO	[jepsen worker 0] jepsen.util: 47	:invoke	:echo	"Please echo 115"
+2026-03-10 17:46:38,078{GMT}	INFO	[jepsen worker 0] jepsen.util: 47	:info	:echo	"Please echo 115"	[:crash "Unexpected exception handling (msg c49 n0 {\"echo\":\"Please echo 115\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:38,321{GMT}	INFO	[jepsen worker 0] jepsen.util: 48	:invoke	:echo	"Please echo 82"
+2026-03-10 17:46:38,323{GMT}	INFO	[jepsen worker 0] jepsen.util: 48	:info	:echo	"Please echo 82"	[:crash "Unexpected exception handling (msg c50 n0 {\"echo\":\"Please echo 82\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:38,474{GMT}	INFO	[jepsen worker 0] jepsen.util: 49	:invoke	:echo	"Please echo 96"
+2026-03-10 17:46:38,476{GMT}	INFO	[jepsen worker 0] jepsen.util: 49	:info	:echo	"Please echo 96"	[:crash "Unexpected exception handling (msg c51 n0 {\"echo\":\"Please echo 96\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:38,657{GMT}	INFO	[jepsen worker 0] jepsen.util: 50	:invoke	:echo	"Please echo 91"
+2026-03-10 17:46:38,659{GMT}	INFO	[jepsen worker 0] jepsen.util: 50	:info	:echo	"Please echo 91"	[:crash "Unexpected exception handling (msg c52 n0 {\"echo\":\"Please echo 91\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:39,036{GMT}	INFO	[jepsen worker 0] jepsen.util: 51	:invoke	:echo	"Please echo 102"
+2026-03-10 17:46:39,038{GMT}	INFO	[jepsen worker 0] jepsen.util: 51	:info	:echo	"Please echo 102"	[:crash "Unexpected exception handling (msg c53 n0 {\"echo\":\"Please echo 102\",\"type\":\"echo\",\"msg_id\":1}) : java.lang.RuntimeException: No handler for echo\njava.lang.RuntimeException: No handler for echo\n\tat lab.Node.handleRequest(Node.java:95)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-10 17:46:39,053{GMT}	INFO	[jepsen test runner] jepsen.core: Run complete, writing
+2026-03-10 17:46:39,093{GMT}	INFO	[jepsen node n0] maelstrom.db: Tearing down n0
+2026-03-10 17:46:40,953{GMT}	INFO	[jepsen node n0] maelstrom.net: Shutting down Maelstrom network
+2026-03-10 17:46:40,953{GMT}	INFO	[jepsen test runner] jepsen.core: Analyzing...
+2026-03-10 17:46:41,173{GMT}	INFO	[jepsen test runner] jepsen.core: Analysis complete
+2026-03-10 17:46:41,180{GMT}	INFO	[jepsen results] jepsen.store: Wrote /home/banna/Documents/maelstrom-java/store/echo/20260310T174627.585Z/results.edn
+2026-03-10 17:46:41,316{GMT}	INFO	[jepsen test runner] jepsen.core: {:perf {:latency-graph {:valid? true},
+        :rate-graph {:valid? true},
+        :valid? true},
+ :timeline {:valid? true},
+ :exceptions {:valid? true},
+ :stats {:valid? false,
+         :count 52,
+         :ok-count 0,
+         :fail-count 0,
+         :info-count 52,
+         :by-f {:echo {:valid? false,
+                       :count 52,
+                       :ok-count 0,
+                       :fail-count 0,
+                       :info-count 52}}},
+ :availability {:valid? true, :ok-fraction 0.0},
+ :net {:all {:send-count 106,
+             :recv-count 106,
+             :msg-count 106,
+             :msgs-per-op 2.0384614},
+       :clients {:send-count 106, :recv-count 106, :msg-count 106},
+       :servers {:send-count 0,
+                 :recv-count 0,
+                 :msg-count 0,
+                 :msgs-per-op 0.0},
+       :valid? true},
+ :workload {:valid? true, :errors ()},
+ :valid? false}
+
+
+Analysis invalid! (ﾉಥ益ಥ）ﾉ ┻━┻

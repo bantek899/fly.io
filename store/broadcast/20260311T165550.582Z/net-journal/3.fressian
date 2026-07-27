@@ -1,0 +1,9 @@
+Ô‹ev~j<):YÕ ˜ÕﬁsendÔ›msgÕ‹c1Õ‹n0¿ÌÕ ˜ÕﬁtypeÕ„topologyÕ ˜Ü¿Ê‹n0‰Õ ˜Õ‡msg_id˝†~j>≤<√Õ ˜Õﬁrecv°ÉÇ¿ÌÑÕﬂerrorÕ ˜ÕﬁcodeÕ ˜Õﬁtext„R3Unexpected exception handling (msg c1 n0 {"type":"topology","topology":{"n0":[]},"msg_id":1}) : java.lang.RuntimeException: No handler for topology
+java.lang.RuntimeException: No handler for topology
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Õ ˜Õ„in_reply_toà˝

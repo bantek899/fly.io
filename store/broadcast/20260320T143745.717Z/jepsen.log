@@ -1,0 +1,190 @@
+2026-03-20 14:37:45,740{GMT}	INFO	[jepsen test runner] jepsen.core: Command line:
+lein run test -w broadcast --bin run.sh broadcast --node-count 5 --time-limit 20 --rate 10
+2026-03-20 14:37:45,805{GMT}	INFO	[jepsen test runner] jepsen.core: Running test:
+{:args ["broadcast"]
+ :remote
+ #jepsen.control.retry.Remote{:remote #jepsen.control.scp.Remote{:cmd-remote #jepsen.control.sshj.SSHJRemote{:concurrency-limit 6,
+                                                                                                             :conn-spec nil,
+                                                                                                             :client nil,
+                                                                                                             :semaphore nil},
+                                                                 :conn-spec nil},
+                              :conn nil}
+ :log-net-send false
+ :node-count 5
+ :availability nil
+ :max-txn-length 4
+ :concurrency 5
+ :db
+ #object[maelstrom.db$db$reify__16142
+         "0x3619ecd"
+         "maelstrom.db$db$reify__16142@3619ecd"]
+ :max-writes-per-key 16
+ :leave-db-running? false
+ :name "broadcast"
+ :logging-json? false
+ :start-time
+ #object[org.joda.time.DateTime "0x7de4bd8f" "2026-03-20T14:37:45.717Z"]
+ :nemesis-interval 10
+ :net
+ #object[maelstrom.net$jepsen_net$reify__15251
+         "0x193e65d5"
+         "maelstrom.net$jepsen_net$reify__15251@193e65d5"]
+ :client
+ #object[maelstrom.workload.broadcast$client$reify__16644
+         "0x2a97b4b8"
+         "maelstrom.workload.broadcast$client$reify__16644@2a97b4b8"]
+ :barrier
+ #object[java.util.concurrent.CyclicBarrier
+         "0x250fc0d1"
+         "java.util.concurrent.CyclicBarrier@250fc0d1"]
+ :log-stderr false
+ :pure-generators true
+ :ssh {:dummy? true}
+ :rate 10.0
+ :checker
+ #object[jepsen.checker$compose$reify__11881
+         "0x7ddf193a"
+         "jepsen.checker$compose$reify__11881@7ddf193a"]
+ :argv
+ ("test"
+  "-w"
+  "broadcast"
+  "--bin"
+  "run.sh"
+  "broadcast"
+  "--node-count"
+  "5"
+  "--time-limit"
+  "20"
+  "--rate"
+  "10")
+ :nemesis
+ (jepsen.nemesis.ReflCompose
+  {:fm {:start-partition 0,
+        :stop-partition 0,
+        :kill 1,
+        :start 1,
+        :pause 1,
+        :resume 1},
+   :nemeses [#unprintable "jepsen.nemesis.combined$partition_nemesis$reify__16416@17a5cb99"
+             #unprintable "jepsen.nemesis.combined$db_nemesis$reify__16397@808fa1"]})
+ :nodes ["n0" "n1" "n2" "n3" "n4"]
+ :test-count 1
+ :latency {:mean 0, :dist :constant}
+ :bin "run.sh"
+ :generator
+ ((jepsen.generator.Synchronize
+   {:gen (jepsen.generator.TimeLimit
+          {:limit 20000000000,
+           :cutoff nil,
+           :gen (jepsen.generator.Any
+                 {:gens [(jepsen.generator.OnThreads
+                          {:f #{:nemesis},
+                           :context-filter #object[jepsen.generator.context$make_thread_filter$lazy_filter__9167
+                                                   "0x7545cb17"
+                                                   "jepsen.generator.context$make_thread_filter$lazy_filter__9167@7545cb17"],
+                           :gen nil})
+                         (jepsen.generator.OnThreads
+                          {:f #jepsen.generator.context.AllBut{:element :nemesis},
+                           :context-filter #object[jepsen.generator.context$make_thread_filter$lazy_filter__9167
+                                                   "0x635b3ec7"
+                                                   "jepsen.generator.context$make_thread_filter$lazy_filter__9167@635b3ec7"],
+                           :gen (jepsen.generator.Stagger
+                                 {:dt 200000000,
+                                  :next-time nil,
+                                  :gen (jepsen.generator.Mix
+                                        {:i 0,
+                                         :gens [({:f :broadcast, :value 0}
+                                                 {:f :broadcast, :value 1}
+                                                 {:f :broadcast, :value 2}
+                                                 {:f :broadcast, :value 3}
+                                                 {:f :broadcast, :value 4}
+                                                 {:f :broadcast, :value 5}
+                                                 {:f :broadcast, :value 6}
+                                                 {:f :broadcast, :value 7}
+                                                 ...)
+                                                ({:f :read}
+                                                 {:f :read}
+                                                 {:f :read}
+                                                 {:f :read}
+                                                 {:f :read}
+                                                 {:f :read}
+                                                 {:f :read}
+                                                 {:f :read}
+                                                 ...)]})})})]})})})
+  (jepsen.generator.Synchronize
+   {:gen (jepsen.generator.OnThreads
+          {:f #{:nemesis},
+           :context-filter #object[jepsen.generator.context$make_thread_filter$lazy_filter__9167
+                                   "0x15aa3084"
+                                   "jepsen.generator.context$make_thread_filter$lazy_filter__9167@15aa3084"],
+           :gen ()})})
+  (jepsen.generator.Synchronize
+   {:gen {:type :log, :value "Waiting for recovery..."}})
+  (jepsen.generator.Synchronize {:gen {:type :sleep, :value 10}})
+  (jepsen.generator.Synchronize
+   {:gen (jepsen.generator.OnThreads
+          {:f #jepsen.generator.context.AllBut{:element :nemesis},
+           :context-filter #object[jepsen.generator.context$make_thread_filter$lazy_filter__9167
+                                   "0x4e6c4c55"
+                                   "jepsen.generator.context$make_thread_filter$lazy_filter__9167@4e6c4c55"],
+           :gen (jepsen.generator.EachThread
+                 {:fresh-gen {:f :read, :final? true},
+                  :context-filters #object[clojure.core$promise$reify__8591
+                                           "0x74fbee59"
+                                           {:status :pending, :val nil}],
+                  :gens {}})})}))
+ :log-net-recv false
+ :os
+ #object[maelstrom.net$jepsen_os$reify__15254
+         "0x3794621d"
+         "maelstrom.net$jepsen_os$reify__15254@3794621d"]
+ :time-limit 20
+ :workload :broadcast
+ :consistency-models [:strict-serializable]
+ :topology :grid}
+
+2026-03-20 14:37:47,208{GMT}	INFO	[jepsen node n0] maelstrom.net: Starting Maelstrom network
+2026-03-20 14:37:47,210{GMT}	INFO	[jepsen test runner] jepsen.db: Tearing down DB
+2026-03-20 14:37:47,213{GMT}	INFO	[jepsen test runner] jepsen.db: Setting up DB
+2026-03-20 14:37:47,215{GMT}	INFO	[jepsen node n1] maelstrom.db: Setting up n1
+2026-03-20 14:37:47,216{GMT}	INFO	[jepsen node n2] maelstrom.db: Setting up n2
+2026-03-20 14:37:47,216{GMT}	INFO	[jepsen node n2] maelstrom.process: launching run.sh ["broadcast"]
+2026-03-20 14:37:47,216{GMT}	INFO	[jepsen node n1] maelstrom.process: launching run.sh ["broadcast"]
+2026-03-20 14:37:47,216{GMT}	INFO	[jepsen node n3] maelstrom.db: Setting up n3
+2026-03-20 14:37:47,217{GMT}	INFO	[jepsen node n4] maelstrom.db: Setting up n4
+2026-03-20 14:37:47,217{GMT}	INFO	[jepsen node n3] maelstrom.process: launching run.sh ["broadcast"]
+2026-03-20 14:37:47,218{GMT}	INFO	[jepsen node n4] maelstrom.process: launching run.sh ["broadcast"]
+2026-03-20 14:37:47,218{GMT}	INFO	[jepsen node n0] maelstrom.service: Starting services: (lin-kv lin-tso lww-kv seq-kv)
+2026-03-20 14:37:47,226{GMT}	INFO	[jepsen node n0] maelstrom.db: Setting up n0
+2026-03-20 14:37:47,227{GMT}	INFO	[jepsen node n0] maelstrom.process: launching run.sh ["broadcast"]
+2026-03-20 14:37:47,459{GMT}	INFO	[jepsen test runner] jepsen.core: Relative time begins now
+2026-03-20 14:37:47,479{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:invoke	:broadcast	0
+2026-03-20 14:37:47,537{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:info	:broadcast	0	[:crash "Unexpected exception handling (msg c10 n0 {\"type\":\"broadcast\",\"message\":0,\"msg_id\":1}) : java.lang.NullPointerException: Cannot invoke \"java.util.List.contains(Object)\" because the return value of \"java.util.Map.get(Object)\" is null\njava.lang.NullPointerException: Cannot invoke \"java.util.List.contains(Object)\" because the return value of \"java.util.Map.get(Object)\" is null\n\tat lab.BroadcastServer.lambda$run$0(BroadcastServer.java:42)\n\tat lab.Node.handleRequest(Node.java:97)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-20 14:37:47,670{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:invoke	:broadcast	1
+2026-03-20 14:37:47,761{GMT}	INFO	[jepsen worker 1] jepsen.util: 1	:info	:broadcast	1	[:crash "Unexpected exception handling (msg c11 n1 {\"type\":\"broadcast\",\"message\":1,\"msg_id\":1}) : java.lang.NullPointerException: Cannot invoke \"java.util.List.contains(Object)\" because the return value of \"java.util.Map.get(Object)\" is null\njava.lang.NullPointerException: Cannot invoke \"java.util.List.contains(Object)\" because the return value of \"java.util.Map.get(Object)\" is null\n\tat lab.BroadcastServer.lambda$run$0(BroadcastServer.java:42)\n\tat lab.Node.handleRequest(Node.java:97)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-20 14:37:47,851{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:invoke	:broadcast	2
+2026-03-20 14:37:47,935{GMT}	INFO	[jepsen worker 2] jepsen.util: 2	:info	:broadcast	2	[:crash "Unexpected exception handling (msg c12 n2 {\"type\":\"broadcast\",\"message\":2,\"msg_id\":1}) : java.lang.NullPointerException: Cannot invoke \"java.util.List.contains(Object)\" because the return value of \"java.util.Map.get(Object)\" is null\njava.lang.NullPointerException: Cannot invoke \"java.util.List.contains(Object)\" because the return value of \"java.util.Map.get(Object)\" is null\n\tat lab.BroadcastServer.lambda$run$0(BroadcastServer.java:42)\n\tat lab.Node.handleRequest(Node.java:97)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-20 14:37:47,995{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:invoke	:broadcast	3
+2026-03-20 14:37:48,074{GMT}	INFO	[jepsen worker 3] jepsen.util: 3	:info	:broadcast	3	[:crash "Unexpected exception handling (msg c13 n3 {\"type\":\"broadcast\",\"message\":3,\"msg_id\":1}) : java.lang.NullPointerException: Cannot invoke \"java.util.List.contains(Object)\" because the return value of \"java.util.Map.get(Object)\" is null\njava.lang.NullPointerException: Cannot invoke \"java.util.List.contains(Object)\" because the return value of \"java.util.Map.get(Object)\" is null\n\tat lab.BroadcastServer.lambda$run$0(BroadcastServer.java:42)\n\tat lab.Node.handleRequest(Node.java:97)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-20 14:37:48,154{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:invoke	:broadcast	4
+2026-03-20 14:37:48,228{GMT}	INFO	[jepsen worker 4] jepsen.util: 4	:info	:broadcast	4	[:crash "Unexpected exception handling (msg c14 n4 {\"type\":\"broadcast\",\"message\":4,\"msg_id\":1}) : java.lang.NullPointerException: Cannot invoke \"java.util.List.contains(Object)\" because the return value of \"java.util.Map.get(Object)\" is null\njava.lang.NullPointerException: Cannot invoke \"java.util.List.contains(Object)\" because the return value of \"java.util.Map.get(Object)\" is null\n\tat lab.BroadcastServer.lambda$run$0(BroadcastServer.java:42)\n\tat lab.Node.handleRequest(Node.java:97)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-20 14:37:48,272{GMT}	INFO	[jepsen worker 0] jepsen.util: 5	:invoke	:broadcast	5
+2026-03-20 14:37:48,278{GMT}	INFO	[jepsen worker 0] jepsen.util: 5	:info	:broadcast	5	[:crash "Unexpected exception handling (msg c15 n0 {\"type\":\"broadcast\",\"message\":5,\"msg_id\":1}) : java.lang.NullPointerException: Cannot invoke \"java.util.List.contains(Object)\" because the return value of \"java.util.Map.get(Object)\" is null\njava.lang.NullPointerException: Cannot invoke \"java.util.List.contains(Object)\" because the return value of \"java.util.Map.get(Object)\" is null\n\tat lab.BroadcastServer.lambda$run$0(BroadcastServer.java:42)\n\tat lab.Node.handleRequest(Node.java:97)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-20 14:37:48,347{GMT}	INFO	[jepsen worker 0] jepsen.util: 10	:invoke	:read	nil
+2026-03-20 14:37:48,352{GMT}	INFO	[jepsen worker 0] jepsen.util: 10	:ok	:read	[]
+2026-03-20 14:37:48,534{GMT}	INFO	[jepsen worker 1] jepsen.util: 6	:invoke	:read	nil
+2026-03-20 14:37:48,538{GMT}	INFO	[jepsen worker 1] jepsen.util: 6	:ok	:read	[]
+2026-03-20 14:37:48,570{GMT}	INFO	[jepsen worker 2] jepsen.util: 7	:invoke	:broadcast	6
+2026-03-20 14:37:48,574{GMT}	INFO	[jepsen worker 2] jepsen.util: 7	:info	:broadcast	6	[:crash "Unexpected exception handling (msg c18 n2 {\"type\":\"broadcast\",\"message\":6,\"msg_id\":1}) : java.lang.NullPointerException: Cannot invoke \"java.util.List.contains(Object)\" because the return value of \"java.util.Map.get(Object)\" is null\njava.lang.NullPointerException: Cannot invoke \"java.util.List.contains(Object)\" because the return value of \"java.util.Map.get(Object)\" is null\n\tat lab.BroadcastServer.lambda$run$0(BroadcastServer.java:42)\n\tat lab.Node.handleRequest(Node.java:97)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-20 14:37:48,719{GMT}	INFO	[jepsen worker 3] jepsen.util: 8	:invoke	:broadcast	7
+2026-03-20 14:37:48,726{GMT}	INFO	[jepsen worker 3] jepsen.util: 8	:info	:broadcast	7	[:crash "Unexpected exception handling (msg c19 n3 {\"type\":\"broadcast\",\"message\":7,\"msg_id\":1}) : java.lang.NullPointerException: Cannot invoke \"java.util.List.contains(Object)\" because the return value of \"java.util.Map.get(Object)\" is null\njava.lang.NullPointerException: Cannot invoke \"java.util.List.contains(Object)\" because the return value of \"java.util.Map.get(Object)\" is null\n\tat lab.BroadcastServer.lambda$run$0(BroadcastServer.java:42)\n\tat lab.Node.handleRequest(Node.java:97)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-20 14:37:48,850{GMT}	INFO	[jepsen worker 4] jepsen.util: 9	:invoke	:read	nil
+2026-03-20 14:37:48,854{GMT}	INFO	[jepsen worker 4] jepsen.util: 9	:ok	:read	[]
+2026-03-20 14:37:49,045{GMT}	INFO	[jepsen worker 0] jepsen.util: 10	:invoke	:broadcast	8
+2026-03-20 14:37:49,052{GMT}	INFO	[jepsen worker 0] jepsen.util: 10	:info	:broadcast	8	[:crash "Unexpected exception handling (msg c16 n0 {\"type\":\"broadcast\",\"message\":8,\"msg_id\":2}) : java.lang.NullPointerException: Cannot invoke \"java.util.List.contains(Object)\" because the return value of \"java.util.Map.get(Object)\" is null\njava.lang.NullPointerException: Cannot invoke \"java.util.List.contains(Object)\" because the return value of \"java.util.Map.get(Object)\" is null\n\tat lab.BroadcastServer.lambda$run$0(BroadcastServer.java:42)\n\tat lab.Node.handleRequest(Node.java:97)\n\tat lab.Node.handleMessage(Node.java:71)\n\tat lab.Node.lambda$run$0(Node.java:44)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n"]
+2026-03-20 14:37:49,219{GMT}	INFO	[jepsen worker 0] jepsen.util: 15	:invoke	:read	nil
+2026-03-20 14:37:49,223{GMT}	INFO	[jepsen worker 0] jepsen.util: 15	:ok	:read	[]
+2026-03-20 14:37:49,286{GMT}	INFO	[jepsen worker 1] jepsen.util: 6	:invoke	:read	nil
+2026-03-20 14:37:49,291{GMT}	INFO	[jepsen worker 1] jepsen.util: 6	:ok	:read	[]
+2026-03-20 14:37:49,357{GMT}	INFO	[Jepsen shutdown hook] jepsen.core: Downloading DB logs before JVM shutdown...

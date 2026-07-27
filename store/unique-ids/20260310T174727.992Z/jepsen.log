@@ -1,0 +1,131 @@
+2026-03-10 17:47:28,009{GMT}	INFO	[jepsen test runner] jepsen.core: Command line:
+lein run test -w unique-ids --bin run.sh generate --node-count 1 --time-limit 10
+2026-03-10 17:47:28,066{GMT}	INFO	[jepsen test runner] jepsen.core: Running test:
+{:args ["generate"]
+ :remote
+ #jepsen.control.retry.Remote{:remote #jepsen.control.scp.Remote{:cmd-remote #jepsen.control.sshj.SSHJRemote{:concurrency-limit 6,
+                                                                                                             :conn-spec nil,
+                                                                                                             :client nil,
+                                                                                                             :semaphore nil},
+                                                                 :conn-spec nil},
+                              :conn nil}
+ :log-net-send false
+ :node-count 1
+ :availability nil
+ :max-txn-length 4
+ :concurrency 1
+ :db
+ #object[maelstrom.db$db$reify__16142
+         "0x75f3c0c9"
+         "maelstrom.db$db$reify__16142@75f3c0c9"]
+ :max-writes-per-key 16
+ :leave-db-running? false
+ :name "unique-ids"
+ :logging-json? false
+ :start-time
+ #object[org.joda.time.DateTime "0x28ec35e3" "2026-03-10T17:47:27.992Z"]
+ :nemesis-interval 10
+ :net
+ #object[maelstrom.net$jepsen_net$reify__15251
+         "0x5068a2b1"
+         "maelstrom.net$jepsen_net$reify__15251@5068a2b1"]
+ :client
+ #object[maelstrom.workload.unique_ids$client$reify__20074
+         "0x52268f73"
+         "maelstrom.workload.unique_ids$client$reify__20074@52268f73"]
+ :barrier
+ #object[java.util.concurrent.CyclicBarrier
+         "0x3938e876"
+         "java.util.concurrent.CyclicBarrier@3938e876"]
+ :log-stderr false
+ :pure-generators true
+ :ssh {:dummy? true}
+ :rate 5
+ :checker
+ #object[jepsen.checker$compose$reify__11881
+         "0x70b2819f"
+         "jepsen.checker$compose$reify__11881@70b2819f"]
+ :argv
+ ("test"
+  "-w"
+  "unique-ids"
+  "--bin"
+  "run.sh"
+  "generate"
+  "--node-count"
+  "1"
+  "--time-limit"
+  "10")
+ :nemesis
+ (jepsen.nemesis.ReflCompose
+  {:fm {:start-partition 0,
+        :stop-partition 0,
+        :kill 1,
+        :start 1,
+        :pause 1,
+        :resume 1},
+   :nemeses [#unprintable "jepsen.nemesis.combined$partition_nemesis$reify__16416@65dac812"
+             #unprintable "jepsen.nemesis.combined$db_nemesis$reify__16397@3619ecd"]})
+ :nodes ["n0"]
+ :test-count 1
+ :latency {:mean 0, :dist :constant}
+ :bin "run.sh"
+ :generator
+ (jepsen.generator.TimeLimit
+  {:limit 10000000000,
+   :cutoff nil,
+   :gen (jepsen.generator.Any
+         {:gens [(jepsen.generator.OnThreads
+                  {:f #{:nemesis},
+                   :context-filter #object[jepsen.generator.context$make_thread_filter$lazy_filter__9167
+                                           "0x63f88d35"
+                                           "jepsen.generator.context$make_thread_filter$lazy_filter__9167@63f88d35"],
+                   :gen nil})
+                 (jepsen.generator.OnThreads
+                  {:f #jepsen.generator.context.AllBut{:element :nemesis},
+                   :context-filter #object[jepsen.generator.context$make_thread_filter$lazy_filter__9167
+                                           "0x2e962cec"
+                                           "jepsen.generator.context$make_thread_filter$lazy_filter__9167@2e962cec"],
+                   :gen (jepsen.generator.Stagger
+                         {:dt 400000000,
+                          :next-time nil,
+                          :gen (jepsen.generator.Repeat
+                                {:remaining -1, :gen {:f :generate}})})})]})})
+ :log-net-recv false
+ :os
+ #object[maelstrom.net$jepsen_os$reify__15254
+         "0x78543f0d"
+         "maelstrom.net$jepsen_os$reify__15254@78543f0d"]
+ :time-limit 10
+ :workload :unique-ids
+ :consistency-models [:strict-serializable]
+ :topology :grid}
+
+2026-03-10 17:47:29,289{GMT}	INFO	[jepsen node n0] maelstrom.net: Starting Maelstrom network
+2026-03-10 17:47:29,290{GMT}	INFO	[jepsen test runner] jepsen.db: Tearing down DB
+2026-03-10 17:47:29,291{GMT}	INFO	[jepsen test runner] jepsen.db: Setting up DB
+2026-03-10 17:47:29,294{GMT}	INFO	[jepsen node n0] maelstrom.service: Starting services: (lin-kv lin-tso lww-kv seq-kv)
+2026-03-10 17:47:29,296{GMT}	INFO	[jepsen node n0] maelstrom.db: Setting up n0
+2026-03-10 17:47:29,297{GMT}	INFO	[jepsen node n0] maelstrom.process: launching run.sh ["generate"]
+2026-03-10 17:47:29,376{GMT}	INFO	[jepsen test runner] jepsen.core: Relative time begins now
+2026-03-10 17:47:29,387{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:invoke	:generate	nil
+2026-03-10 17:47:29,391{GMT}	WARN	[n0 stdout] maelstrom.process: Error!
+clojure.lang.ExceptionInfo: Node n0 printed a line to STDOUT which was not well-formed JSON:
+here
+Did you mean to encode this line as JSON? Or was this line intended for STDERR? See doc/protocol.md for more guidance.
+	at slingshot.support$stack_trace.invoke(support.clj:201)
+	at maelstrom.process$parse_msg$fn__15856.invoke(process.clj:47)
+	at maelstrom.process$parse_msg.invokeStatic(process.clj:45)
+	at maelstrom.process$parse_msg.invoke(process.clj:35)
+	at maelstrom.process$stdout_thread$fn__15878$fn__15879$fn__15881.invoke(process.clj:146)
+	at maelstrom.process$stdout_thread$fn__15878$fn__15879.invoke(process.clj:146)
+	at maelstrom.process$stdout_thread$fn__15878.invoke(process.clj:140)
+	at clojure.core$binding_conveyor_fn$fn__5823.invoke(core.clj:2047)
+	at clojure.lang.AFn.call(AFn.java:18)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-10 17:47:34,389{GMT}	INFO	[jepsen worker 0] jepsen.util: 0	:info	:generate	nil	:net-timeout
+2026-03-10 17:47:34,390{GMT}	INFO	[jepsen worker 0] jepsen.util: 1	:invoke	:generate	nil
+2026-03-10 17:47:34,597{GMT}	INFO	[Jepsen shutdown hook] jepsen.core: Downloading DB logs before JVM shutdown...

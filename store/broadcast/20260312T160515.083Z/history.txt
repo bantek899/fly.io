@@ -1,0 +1,1851 @@
+0	:invoke	:read	nil
+0	:fail	:read	nil	:net-timeout
+0	:invoke	:broadcast	0
+0	:ok	:broadcast	0
+0	:invoke	:read	nil
+0	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 3}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 3, :msg_id 3}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+1	:invoke	:read	nil
+1	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 4}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+2	:invoke	:read	nil
+2	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 5}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+3	:invoke	:broadcast	1
+3	:ok	:broadcast	1
+3	:invoke	:broadcast	2
+3	:ok	:broadcast	2
+3	:invoke	:broadcast	3
+3	:ok	:broadcast	3
+3	:invoke	:broadcast	4
+3	:ok	:broadcast	4
+3	:invoke	:read	nil
+3	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 5}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 5, :msg_id 10}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+4	:invoke	:read	nil
+4	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 15}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+5	:invoke	:read	nil
+5	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 20}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+6	:invoke	:read	nil
+6	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 25}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+7	:invoke	:read	nil
+7	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 30}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+8	:invoke	:read	nil
+8	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 35}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+9	:invoke	:broadcast	5
+9	:ok	:broadcast	5
+9	:invoke	:read	nil
+9	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 2}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 2, :msg_id 41}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+10	:invoke	:broadcast	6
+10	:ok	:broadcast	6
+10	:invoke	:broadcast	7
+10	:ok	:broadcast	7
+10	:invoke	:broadcast	8
+10	:ok	:broadcast	8
+10	:invoke	:read	nil
+10	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 4}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 4, :msg_id 50}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+11	:invoke	:broadcast	9
+11	:ok	:broadcast	9
+11	:invoke	:broadcast	10
+11	:ok	:broadcast	10
+11	:invoke	:read	nil
+11	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 3}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 3, :msg_id 61}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+12	:invoke	:broadcast	11
+12	:ok	:broadcast	11
+12	:invoke	:read	nil
+12	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 2}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 2, :msg_id 73}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+13	:invoke	:broadcast	12
+13	:ok	:broadcast	12
+13	:invoke	:read	nil
+13	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 2}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 2, :msg_id 86}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+14	:invoke	:read	nil
+14	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 99}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+15	:invoke	:broadcast	13
+15	:ok	:broadcast	13
+15	:invoke	:broadcast	14
+15	:ok	:broadcast	14
+15	:invoke	:read	nil
+15	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 3}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 3, :msg_id 114}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+16	:invoke	:broadcast	15
+16	:ok	:broadcast	15
+16	:invoke	:broadcast	16
+16	:ok	:broadcast	16
+16	:invoke	:broadcast	17
+16	:ok	:broadcast	17
+16	:invoke	:broadcast	18
+16	:ok	:broadcast	18
+16	:invoke	:broadcast	19
+16	:ok	:broadcast	19
+16	:invoke	:read	nil
+16	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 6}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 6, :msg_id 134}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+17	:invoke	:broadcast	20
+17	:ok	:broadcast	20
+17	:invoke	:broadcast	21
+17	:ok	:broadcast	21
+17	:invoke	:broadcast	22
+17	:ok	:broadcast	22
+17	:invoke	:read	nil
+17	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 4}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 4, :msg_id 157}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+18	:invoke	:read	nil
+18	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 180}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+19	:invoke	:broadcast	23
+19	:ok	:broadcast	23
+19	:invoke	:read	nil
+19	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 2}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 2, :msg_id 204}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+20	:invoke	:broadcast	24
+20	:ok	:broadcast	24
+20	:invoke	:read	nil
+20	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 2}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 2, :msg_id 229}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+21	:invoke	:read	nil
+21	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 254}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+22	:invoke	:read	nil
+22	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 279}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+23	:invoke	:read	nil
+23	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 304}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+24	:invoke	:broadcast	25
+24	:ok	:broadcast	25
+24	:invoke	:broadcast	26
+24	:ok	:broadcast	26
+24	:invoke	:broadcast	27
+24	:ok	:broadcast	27
+24	:invoke	:broadcast	28
+24	:ok	:broadcast	28
+24	:invoke	:broadcast	29
+24	:ok	:broadcast	29
+24	:invoke	:read	nil
+24	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 6}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 6, :msg_id 334}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+25	:invoke	:broadcast	30
+25	:ok	:broadcast	30
+25	:invoke	:broadcast	31
+25	:ok	:broadcast	31
+25	:invoke	:read	nil
+25	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 3}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 3, :msg_id 366}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+26	:invoke	:broadcast	32
+26	:ok	:broadcast	32
+26	:invoke	:read	nil
+26	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 2}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 2, :msg_id 399}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+27	:invoke	:read	nil
+27	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 432}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+28	:invoke	:read	nil
+28	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 465}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+29	:invoke	:read	nil
+29	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 498}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+30	:invoke	:broadcast	33
+30	:ok	:broadcast	33
+30	:invoke	:read	nil
+30	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 2}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 2, :msg_id 532}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+31	:invoke	:broadcast	34
+31	:ok	:broadcast	34
+31	:invoke	:read	nil
+31	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 2}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 2, :msg_id 567}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+32	:invoke	:read	nil
+32	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 602}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+33	:invoke	:read	nil
+33	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 637}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+34	:invoke	:read	nil
+34	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 672}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+35	:invoke	:broadcast	35
+35	:ok	:broadcast	35
+35	:invoke	:broadcast	36
+35	:ok	:broadcast	36
+35	:invoke	:read	nil
+35	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 3}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 3, :msg_id 709}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+36	:invoke	:read	nil
+36	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 746}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+37	:invoke	:broadcast	37
+37	:ok	:broadcast	37
+37	:invoke	:broadcast	38
+37	:ok	:broadcast	38
+37	:invoke	:broadcast	39
+37	:ok	:broadcast	39
+37	:invoke	:read	nil
+37	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 4}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 4, :msg_id 786}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+38	:invoke	:broadcast	40
+38	:ok	:broadcast	40
+38	:invoke	:read	nil
+38	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 2}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 2, :msg_id 827}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+39	:invoke	:read	nil
+39	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 868}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+40	:invoke	:read	nil
+40	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 909}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+41	:invoke	:broadcast	41
+41	:ok	:broadcast	41
+41	:invoke	:broadcast	42
+41	:ok	:broadcast	42
+41	:invoke	:read	nil
+41	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 3}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 3, :msg_id 952}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+42	:invoke	:read	nil
+42	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 995}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+43	:invoke	:read	nil
+43	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 1038}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+44	:invoke	:read	nil
+44	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 1081}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+45	:invoke	:broadcast	43
+45	:ok	:broadcast	43
+45	:invoke	:read	nil
+45	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 2}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 2, :msg_id 1125}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+46	:invoke	:read	nil
+46	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 1169}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+47	:invoke	:read	nil
+47	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 1213}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+48	:invoke	:read	nil
+48	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 1257}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+49	:invoke	:read	nil
+49	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 1301}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+50	:invoke	:broadcast	44
+50	:ok	:broadcast	44
+50	:invoke	:broadcast	45
+50	:ok	:broadcast	45
+50	:invoke	:broadcast	46
+50	:ok	:broadcast	46
+50	:invoke	:read	nil
+50	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 4}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 4, :msg_id 1348}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+51	:invoke	:read	nil
+51	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 1395}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+52	:invoke	:broadcast	47
+52	:ok	:broadcast	47
+52	:invoke	:read	nil
+52	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 2}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 2, :msg_id 1443}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+53	:invoke	:broadcast	48
+53	:ok	:broadcast	48
+53	:invoke	:broadcast	49
+53	:ok	:broadcast	49
+53	:invoke	:broadcast	50
+53	:ok	:broadcast	50
+53	:invoke	:broadcast	51
+53	:ok	:broadcast	51
+53	:invoke	:broadcast	52
+53	:ok	:broadcast	52
+53	:invoke	:read	nil
+53	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 6}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 6, :msg_id 1496}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+54	:invoke	:read	nil
+54	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 1549}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+55	:invoke	:broadcast	53
+55	:ok	:broadcast	53
+55	:invoke	:read	nil
+55	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 2}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 2, :msg_id 1603}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+56	:invoke	:read	nil
+56	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 1657}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+57	:invoke	:read	nil
+57	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 1711}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+58	:invoke	:read	nil
+58	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 1765}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+59	:invoke	:read	nil
+59	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 1819}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+60	:invoke	:broadcast	54
+60	:ok	:broadcast	54
+60	:invoke	:broadcast	55
+60	:ok	:broadcast	55
+60	:invoke	:broadcast	56
+60	:ok	:broadcast	56
+60	:invoke	:read	nil
+60	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 4}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 4, :msg_id 1876}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+61	:invoke	:broadcast	57
+61	:ok	:broadcast	57
+61	:invoke	:read	nil
+61	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 2}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 2, :msg_id 1934}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+62	:invoke	:read	nil
+62	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 1992}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+63	:invoke	:broadcast	58
+63	:ok	:broadcast	58
+63	:invoke	:broadcast	59
+63	:ok	:broadcast	59
+63	:invoke	:read	nil
+63	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 3}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 3, :msg_id 2052}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+64	:invoke	:read	nil
+64	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 2112}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+65	:invoke	:read	nil
+65	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 2172}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+66	:invoke	:read	nil
+66	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 2232}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+67	:invoke	:read	nil
+67	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 2292}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+68	:invoke	:broadcast	60
+68	:ok	:broadcast	60
+68	:invoke	:read	nil
+68	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 2}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 2, :msg_id 2353}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+69	:invoke	:read	nil
+69	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 2414}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+70	:invoke	:read	nil
+70	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 2475}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+71	:invoke	:read	nil
+71	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 2536}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+72	:invoke	:read	nil
+72	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 2597}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+73	:invoke	:read	nil
+73	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 2658}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+74	:invoke	:read	nil
+74	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 2719}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+75	:invoke	:broadcast	61
+75	:ok	:broadcast	61
+75	:invoke	:broadcast	62
+75	:ok	:broadcast	62
+75	:invoke	:broadcast	63
+75	:ok	:broadcast	63
+75	:invoke	:broadcast	64
+75	:ok	:broadcast	64
+75	:invoke	:broadcast	65
+75	:ok	:broadcast	65
+75	:invoke	:broadcast	66
+75	:ok	:broadcast	66
+75	:invoke	:broadcast	67
+75	:ok	:broadcast	67
+75	:invoke	:broadcast	68
+75	:ok	:broadcast	68
+75	:invoke	:broadcast	69
+75	:ok	:broadcast	69
+75	:invoke	:read	nil
+75	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 10}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 10, :msg_id 2789}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+76	:invoke	:read	nil
+76	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 2859}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+77	:invoke	:read	nil
+77	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 1}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 1, :msg_id 2929}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+78	:invoke	:broadcast	70
+78	:ok	:broadcast	70
+78	:invoke	:read	nil
+78	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 2}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 2, :msg_id 3000}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+79	:invoke	:broadcast	71
+79	:ok	:broadcast	71
+79	:invoke	:broadcast	72
+79	:ok	:broadcast	72
+79	:invoke	:read	nil
+79	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 3}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 3, :msg_id 3073}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.
+80	:invoke	:broadcast	73
+80	:ok	:broadcast	73
+80	:invoke	:read	nil
+80	:info	:read	nil	indeterminate: Malformed RPC response. Maelstrom sent node n0 the following request:
+
+{:type "read", :msg_id 2}
+
+And expected a response of the form:
+
+{:type (eq "read_ok"),
+ :messages [Any],
+ {:k :msg_id} Int,
+ :in_reply_to Int}
+
+... but instead received
+
+{:type "read_ok", :messages 0, :in_reply_to 2, :msg_id 3147}
+
+This is malformed because:
+
+{:messages (not (sequential? 0))}
+
+See doc/protocol.md for more guidance.

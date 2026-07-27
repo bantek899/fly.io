@@ -1,0 +1,1783 @@
+<html><head><style>.ops        { position: absolute; }
+.op         { position: absolute; padding: 2px; border-radius: 2px; box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); transition: all 0.3s cubic-bezier(.25,.8,.25,1); overflow: hidden; }
+.op.invoke  { background: #eeeeee; }
+.op.ok      { background: #6DB6FE; }
+.op.info    { background: #FFAA26; }
+.op.fail    { background: #FEB5DA; }
+.op:target  { box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); }
+</style></head><body><div><a href="/">jepsen</a> / <a href="/files/broadcast">broadcast</a> / <a href="/files/broadcast/20260320T144420.661Z">20260320T144420.661Z</a> / <a href="/files/broadcast/20260320T144420.661Z/">independent</a> / <a href="/files/broadcast/20260320T144420.661Z/independent/"></a></div><h1>broadcast key </h1><div class="ops"><a href="#i1"><div class="op ok" id="i1" style="width:100;left:0;top:0;height:16" title="Dur: 9 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:20.687Z
+
+Op:
+{:process 0
+ :type :ok
+ :f :broadcast
+ :index 1
+ :value 0}">0 broadcast 0</div></a><a href="#i4"><div class="op ok" id="i4" style="width:100;left:212;top:48;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:20.901Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 4
+ :value [0]}">2 read <br />[0]</div></a><a href="#i6"><div class="op ok" id="i6" style="width:100;left:318;top:80;height:16" title="Dur: 4 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:20.942Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :broadcast
+ :index 6
+ :value 2}">3 broadcast 2</div></a><a href="#i10"><div class="op ok" id="i10" style="width:100;left:212;top:144;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:21.193Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 10
+ :value 4}">2 broadcast 4</div></a><a href="#i12"><div class="op ok" id="i12" style="width:100;left:212;top:176;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:21.274Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 12
+ :value [0 4]}">2 read <br />[0 4]</div></a><a href="#i14"><div class="op ok" id="i14" style="width:100;left:212;top:208;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:21.400Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 14
+ :value 5}">2 broadcast 5</div></a><a href="#i16"><div class="op ok" id="i16" style="width:100;left:318;top:240;height:16" title="Dur: 4 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:21.499Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :broadcast
+ :index 16
+ :value 6}">3 broadcast 6</div></a><a href="#i18"><div class="op ok" id="i18" style="width:100;left:212;top:272;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:21.598Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 18
+ :value 7}">2 broadcast 7</div></a><a href="#i20"><div class="op ok" id="i20" style="width:100;left:212;top:304;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:21.761Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 20
+ :value [0 4 5 7]}">2 read <br />[0 4 5 7]</div></a><a href="#i22"><div class="op ok" id="i22" style="width:100;left:212;top:336;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:21.840Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 22
+ :value [0 4 5 7]}">2 read <br />[0 4 5 7]</div></a><a href="#i24"><div class="op ok" id="i24" style="width:100;left:212;top:368;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:21.918Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 24
+ :value [0 4 5 7]}">2 read <br />[0 4 5 7]</div></a><a href="#i26"><div class="op ok" id="i26" style="width:100;left:212;top:400;height:16" title="Dur: 4 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:22.005Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 26
+ :value 8}">2 broadcast 8</div></a><a href="#i28"><div class="op ok" id="i28" style="width:100;left:318;top:432;height:16" title="Dur: 4 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:22.182Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :broadcast
+ :index 28
+ :value 9}">3 broadcast 9</div></a><a href="#i30"><div class="op ok" id="i30" style="width:100;left:212;top:464;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:22.320Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 30
+ :value [0 4 5 7 8]}">2 read <br />[0 4 5 7 8]</div></a><a href="#i32"><div class="op ok" id="i32" style="width:100;left:212;top:496;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:22.393Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 32
+ :value [0 4 5 7 8]}">2 read <br />[0 4 5 7 8]</div></a><a href="#i34"><div class="op ok" id="i34" style="width:100;left:212;top:528;height:16" title="Dur: 4 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:22.557Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 34
+ :value [0 4 5 7 8]}">2 read <br />[0 4 5 7 8]</div></a><a href="#i36"><div class="op ok" id="i36" style="width:100;left:212;top:560;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:22.692Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 36
+ :value [0 4 5 7 8]}">2 read <br />[0 4 5 7 8]</div></a><a href="#i38"><div class="op ok" id="i38" style="width:100;left:212;top:592;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:22.872Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 38
+ :value 10}">2 broadcast 10</div></a><a href="#i40"><div class="op ok" id="i40" style="width:100;left:318;top:624;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:23.051Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :read
+ :index 40
+ :value [0 2 6 9]}">3 read <br />[0 2 6 9]</div></a><a href="#i42"><div class="op ok" id="i42" style="width:100;left:212;top:656;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:23.234Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 42
+ :value 11}">2 broadcast 11</div></a><a href="#i44"><div class="op ok" id="i44" style="width:100;left:212;top:688;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:23.417Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 44
+ :value [0 4 5 7 8 10 11]}">2 read <br />[0 4 5 7 8 10 11]</div></a><a href="#i46"><div class="op ok" id="i46" style="width:100;left:212;top:720;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:23.425Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 46
+ :value 12}">2 broadcast 12</div></a><a href="#i48"><div class="op ok" id="i48" style="width:100;left:212;top:752;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:23.597Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 48
+ :value 13}">2 broadcast 13</div></a><a href="#i50"><div class="op ok" id="i50" style="width:100;left:212;top:784;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:23.722Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 50
+ :value 14}">2 broadcast 14</div></a><a href="#i52"><div class="op ok" id="i52" style="width:100;left:318;top:816;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:23.904Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :read
+ :index 52
+ :value [0 2 6 9]}">3 read <br />[0 2 6 9]</div></a><a href="#i54"><div class="op ok" id="i54" style="width:100;left:212;top:848;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:24.029Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 54
+ :value [0 4 5 7 8 10 11 12 13 14]}">2 read <br />[0 4 5 7 8 10 11 12 13 14]</div></a><a href="#i56"><div class="op ok" id="i56" style="width:100;left:212;top:880;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:24.126Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 56
+ :value [0 4 5 7 8 10 11 12 13 14]}">2 read <br />[0 4 5 7 8 10 11 12 13 14]</div></a><a href="#i58"><div class="op ok" id="i58" style="width:100;left:212;top:912;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:24.234Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 58
+ :value 15}">2 broadcast 15</div></a><a href="#i60"><div class="op ok" id="i60" style="width:100;left:212;top:944;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:24.283Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 60
+ :value [0 4 5 7 8 10 11 12 13 14 15]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15]</div></a><a href="#i62"><div class="op ok" id="i62" style="width:100;left:212;top:976;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:24.368Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 62
+ :value 16}">2 broadcast 16</div></a><a href="#i64"><div class="op ok" id="i64" style="width:100;left:318;top:1008;height:16" title="Dur: 4 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:24.517Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :broadcast
+ :index 64
+ :value 17}">3 broadcast 17</div></a><a href="#i66"><div class="op ok" id="i66" style="width:100;left:212;top:1040;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:24.703Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 66
+ :value [0 4 5 7 8 10 11 12 13 14 15 16]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16]</div></a><a href="#i68"><div class="op ok" id="i68" style="width:100;left:212;top:1072;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:24.780Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 68
+ :value [0 4 5 7 8 10 11 12 13 14 15 16]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16]</div></a><a href="#i70"><div class="op ok" id="i70" style="width:100;left:212;top:1104;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:24.945Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 70
+ :value [0 4 5 7 8 10 11 12 13 14 15 16]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16]</div></a><a href="#i72"><div class="op ok" id="i72" style="width:100;left:212;top:1136;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:25.018Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 72
+ :value [0 4 5 7 8 10 11 12 13 14 15 16]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16]</div></a><a href="#i74"><div class="op ok" id="i74" style="width:100;left:212;top:1168;height:16" title="Dur: 4 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:25.156Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 74
+ :value 18}">2 broadcast 18</div></a><a href="#i76"><div class="op ok" id="i76" style="width:100;left:318;top:1200;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:25.191Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :broadcast
+ :index 76
+ :value 19}">3 broadcast 19</div></a><a href="#i78"><div class="op ok" id="i78" style="width:100;left:212;top:1232;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:25.329Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 78
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18]</div></a><a href="#i80"><div class="op ok" id="i80" style="width:100;left:212;top:1264;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:25.393Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 80
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18]</div></a><a href="#i82"><div class="op ok" id="i82" style="width:100;left:212;top:1296;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:25.430Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 82
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18]</div></a><a href="#i84"><div class="op ok" id="i84" style="width:100;left:212;top:1328;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:25.578Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 84
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18]</div></a><a href="#i86"><div class="op ok" id="i86" style="width:100;left:212;top:1360;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:25.745Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 86
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18]</div></a><a href="#i87"><div class="op info" id="i87" style="width:100;left:106;top:32;height:6224" title="Dur: 5002 ms
+Err: :net-timeout
+Wall-clock Time: 2026-03-20T14:44:25.865Z
+
+Op:
+{:process 1
+ :type :info
+ :f :broadcast
+ :index 87
+ :error :net-timeout
+ :value 1}">1 broadcast 1</div></a><a href="#i89"><div class="op ok" id="i89" style="width:100;left:318;top:1408;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:25.939Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :read
+ :index 89
+ :value [0 2 6 9 17 19]}">3 read <br />[0 2 6 9 17 19]</div></a><a href="#i91"><div class="op fail" id="i91" style="width:100;left:424;top:112;height:1344" title="Dur: 5001 ms
+Err: :net-timeout
+Wall-clock Time: 2026-03-20T14:44:26.121Z
+
+Op:
+{:process 4
+ :type :fail
+ :f :read
+ :index 91
+ :error :net-timeout
+ :value }">4 read </div></a><a href="#i92"><div class="op info" id="i92" style="width:100;left:0;top:128;height:6128" title="Dur: 5000 ms
+Err: :net-timeout
+Wall-clock Time: 2026-03-20T14:44:26.160Z
+
+Op:
+{:process 0
+ :type :info
+ :f :broadcast
+ :index 92
+ :error :net-timeout
+ :value 3}">0 broadcast 3</div></a><a href="#i95"><div class="op ok" id="i95" style="width:100;left:212;top:1504;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:26.307Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 95
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18]</div></a><a href="#i97"><div class="op ok" id="i97" style="width:100;left:212;top:1536;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:26.330Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 97
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18]</div></a><a href="#i99"><div class="op ok" id="i99" style="width:100;left:212;top:1568;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:26.514Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 99
+ :value 21}">2 broadcast 21</div></a><a href="#i101"><div class="op ok" id="i101" style="width:100;left:318;top:1600;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:26.632Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :read
+ :index 101
+ :value [0 2 6 9 17 19]}">3 read <br />[0 2 6 9 17 19]</div></a><a href="#i104"><div class="op ok" id="i104" style="width:100;left:212;top:1648;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:26.736Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 104
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21]</div></a><a href="#i106"><div class="op ok" id="i106" style="width:100;left:212;top:1680;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:26.798Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 106
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21]</div></a><a href="#i108"><div class="op ok" id="i108" style="width:100;left:212;top:1712;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:26.966Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 108
+ :value 22}">2 broadcast 22</div></a><a href="#i110"><div class="op ok" id="i110" style="width:100;left:212;top:1744;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:27.002Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 110
+ :value 23}">2 broadcast 23</div></a><a href="#i112"><div class="op ok" id="i112" style="width:100;left:318;top:1776;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:27.174Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :read
+ :index 112
+ :value [0 2 6 9 17 19]}">3 read <br />[0 2 6 9 17 19]</div></a><a href="#i114"><div class="op ok" id="i114" style="width:100;left:212;top:1808;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:27.246Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 114
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23]</div></a><a href="#i116"><div class="op ok" id="i116" style="width:100;left:212;top:1840;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:27.292Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 116
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23]</div></a><a href="#i118"><div class="op ok" id="i118" style="width:100;left:212;top:1872;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:27.448Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 118
+ :value 24}">2 broadcast 24</div></a><a href="#i120"><div class="op ok" id="i120" style="width:100;left:212;top:1904;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:27.531Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 120
+ :value 25}">2 broadcast 25</div></a><a href="#i122"><div class="op ok" id="i122" style="width:100;left:212;top:1936;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:27.676Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 122
+ :value 26}">2 broadcast 26</div></a><a href="#i124"><div class="op ok" id="i124" style="width:100;left:318;top:1968;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:27.740Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :read
+ :index 124
+ :value [0 2 6 9 17 19]}">3 read <br />[0 2 6 9 17 19]</div></a><a href="#i126"><div class="op ok" id="i126" style="width:100;left:212;top:2000;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:27.787Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 126
+ :value 27}">2 broadcast 27</div></a><a href="#i128"><div class="op ok" id="i128" style="width:100;left:212;top:2032;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:27.867Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 128
+ :value 28}">2 broadcast 28</div></a><a href="#i130"><div class="op ok" id="i130" style="width:100;left:212;top:2064;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:27.924Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 130
+ :value 29}">2 broadcast 29</div></a><a href="#i132"><div class="op ok" id="i132" style="width:100;left:212;top:2096;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:28.047Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 132
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29]</div></a><a href="#i134"><div class="op ok" id="i134" style="width:100;left:212;top:2128;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:28.089Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 134
+ :value 30}">2 broadcast 30</div></a><a href="#i137"><div class="op ok" id="i137" style="width:100;left:318;top:2160;height:32" title="Dur: 5 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:28.164Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :read
+ :index 137
+ :value [0 2 6 9 17 19]}">3 read <br />[0 2 6 9 17 19]</div></a><a href="#i138"><div class="op ok" id="i138" style="width:100;left:212;top:2176;height:32" title="Dur: 5 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:28.165Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 138
+ :value 31}">2 broadcast 31</div></a><a href="#i140"><div class="op ok" id="i140" style="width:100;left:212;top:2224;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:28.182Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 140
+ :value 32}">2 broadcast 32</div></a><a href="#i142"><div class="op ok" id="i142" style="width:100;left:212;top:2256;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:28.355Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 142
+ :value 33}">2 broadcast 33</div></a><a href="#i144"><div class="op ok" id="i144" style="width:100;left:212;top:2288;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:28.473Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 144
+ :value 34}">2 broadcast 34</div></a><a href="#i146"><div class="op ok" id="i146" style="width:100;left:212;top:2320;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:28.567Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 146
+ :value 35}">2 broadcast 35</div></a><a href="#i148"><div class="op ok" id="i148" style="width:100;left:318;top:2352;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:28.653Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :read
+ :index 148
+ :value [0 2 6 9 17 19]}">3 read <br />[0 2 6 9 17 19]</div></a><a href="#i150"><div class="op ok" id="i150" style="width:100;left:212;top:2384;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:28.730Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 150
+ :value 36}">2 broadcast 36</div></a><a href="#i152"><div class="op ok" id="i152" style="width:100;left:212;top:2416;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:28.802Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 152
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36]</div></a><a href="#i154"><div class="op ok" id="i154" style="width:100;left:212;top:2448;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:28.842Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 154
+ :value 37}">2 broadcast 37</div></a><a href="#i156"><div class="op ok" id="i156" style="width:100;left:212;top:2480;height:16" title="Dur: 4 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:28.853Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 156
+ :value 38}">2 broadcast 38</div></a><a href="#i158"><div class="op ok" id="i158" style="width:100;left:212;top:2512;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:28.938Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 158
+ :value 39}">2 broadcast 39</div></a><a href="#i160"><div class="op ok" id="i160" style="width:100;left:318;top:2544;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:28.947Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :read
+ :index 160
+ :value [0 2 6 9 17 19]}">3 read <br />[0 2 6 9 17 19]</div></a><a href="#i162"><div class="op ok" id="i162" style="width:100;left:212;top:2576;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:29.013Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 162
+ :value 40}">2 broadcast 40</div></a><a href="#i164"><div class="op ok" id="i164" style="width:100;left:212;top:2608;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:29.058Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 164
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40]</div></a><a href="#i166"><div class="op ok" id="i166" style="width:100;left:212;top:2640;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:29.100Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 166
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40]</div></a><a href="#i168"><div class="op ok" id="i168" style="width:100;left:212;top:2672;height:16" title="Dur: 4 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:29.121Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 168
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40]</div></a><a href="#i170"><div class="op ok" id="i170" style="width:100;left:212;top:2704;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:29.169Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 170
+ :value 41}">2 broadcast 41</div></a><a href="#i172"><div class="op ok" id="i172" style="width:100;left:318;top:2736;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:29.336Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :broadcast
+ :index 172
+ :value 42}">3 broadcast 42</div></a><a href="#i174"><div class="op ok" id="i174" style="width:100;left:212;top:2768;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:29.529Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 174
+ :value 43}">2 broadcast 43</div></a><a href="#i176"><div class="op ok" id="i176" style="width:100;left:212;top:2800;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:29.572Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 176
+ :value 44}">2 broadcast 44</div></a><a href="#i178"><div class="op ok" id="i178" style="width:100;left:212;top:2832;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:29.618Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 178
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44]</div></a><a href="#i180"><div class="op ok" id="i180" style="width:100;left:212;top:2864;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:29.729Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 180
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44]</div></a><a href="#i182"><div class="op ok" id="i182" style="width:100;left:212;top:2896;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:29.825Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 182
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44]</div></a><a href="#i184"><div class="op ok" id="i184" style="width:100;left:318;top:2928;height:16" title="Dur: 4 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:29.992Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :broadcast
+ :index 184
+ :value 45}">3 broadcast 45</div></a><a href="#i186"><div class="op ok" id="i186" style="width:100;left:212;top:2960;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:30.078Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 186
+ :value 46}">2 broadcast 46</div></a><a href="#i188"><div class="op ok" id="i188" style="width:100;left:212;top:2992;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:30.145Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 188
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46]</div></a><a href="#i190"><div class="op ok" id="i190" style="width:100;left:212;top:3024;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:30.249Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 190
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46]</div></a><a href="#i192"><div class="op ok" id="i192" style="width:100;left:212;top:3056;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:30.401Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 192
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46]</div></a><a href="#i194"><div class="op ok" id="i194" style="width:100;left:212;top:3088;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:30.441Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 194
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46]</div></a><a href="#i196"><div class="op ok" id="i196" style="width:100;left:318;top:3120;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:30.540Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :broadcast
+ :index 196
+ :value 47}">3 broadcast 47</div></a><a href="#i198"><div class="op ok" id="i198" style="width:100;left:212;top:3152;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:30.604Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 198
+ :value 48}">2 broadcast 48</div></a><a href="#i200"><div class="op ok" id="i200" style="width:100;left:212;top:3184;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:30.785Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 200
+ :value 49}">2 broadcast 49</div></a><a href="#i202"><div class="op ok" id="i202" style="width:100;left:212;top:3216;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:30.822Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 202
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49]</div></a><a href="#i204"><div class="op ok" id="i204" style="width:100;left:212;top:3248;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:30.919Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 204
+ :value 50}">2 broadcast 50</div></a><a href="#i206"><div class="op ok" id="i206" style="width:100;left:212;top:3280;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:31.090Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 206
+ :value 51}">2 broadcast 51</div></a><a href="#i207"><div class="op info" id="i207" style="width:100;left:636;top:1440;height:4816" title="Dur: 5000 ms
+Err: :net-timeout
+Wall-clock Time: 2026-03-20T14:44:31.092Z
+
+Op:
+{:process 6
+ :type :info
+ :f :broadcast
+ :index 207
+ :error :net-timeout
+ :value 20}">6 broadcast 20</div></a><a href="#i209"><div class="op fail" id="i209" style="width:100;left:530;top:1488;height:1856" title="Dur: 5000 ms
+Err: :net-timeout
+Wall-clock Time: 2026-03-20T14:44:31.279Z
+
+Op:
+{:process 5
+ :type :fail
+ :f :read
+ :index 209
+ :error :net-timeout
+ :value }">5 read </div></a><a href="#i210"><div class="op ok" id="i210" style="width:100;left:318;top:3328;height:32" title="Dur: 4 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:31.283Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :broadcast
+ :index 210
+ :value 52}">3 broadcast 52</div></a><a href="#i213"><div class="op fail" id="i213" style="width:100;left:424;top:1632;height:1776" title="Dur: 5000 ms
+Err: :net-timeout
+Wall-clock Time: 2026-03-20T14:44:31.698Z
+
+Op:
+{:process 4
+ :type :fail
+ :f :read
+ :index 213
+ :error :net-timeout
+ :value }">4 read </div></a><a href="#i215"><div class="op ok" id="i215" style="width:100;left:212;top:3424;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:31.801Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 215
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51]</div></a><a href="#i217"><div class="op ok" id="i217" style="width:100;left:212;top:3456;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:31.973Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 217
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51]</div></a><a href="#i219"><div class="op ok" id="i219" style="width:100;left:212;top:3488;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:32.159Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 219
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51]</div></a><a href="#i221"><div class="op ok" id="i221" style="width:100;left:318;top:3520;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:32.254Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :read
+ :index 221
+ :value [0 2 6 9 17 19 42 45 47 52]}">3 read <br />[0 2 6 9 17 19 42 45 47 52]</div></a><a href="#i224"><div class="op ok" id="i224" style="width:100;left:212;top:3568;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:32.354Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 224
+ :value 55}">2 broadcast 55</div></a><a href="#i226"><div class="op ok" id="i226" style="width:100;left:212;top:3600;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:32.549Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 226
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55]</div></a><a href="#i228"><div class="op ok" id="i228" style="width:100;left:212;top:3632;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:32.621Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 228
+ :value 56}">2 broadcast 56</div></a><a href="#i230"><div class="op ok" id="i230" style="width:100;left:212;top:3664;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:32.689Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 230
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56]</div></a><a href="#i232"><div class="op ok" id="i232" style="width:100;left:318;top:3696;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:32.888Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :read
+ :index 232
+ :value [0 2 6 9 17 19 42 45 47 52]}">3 read <br />[0 2 6 9 17 19 42 45 47 52]</div></a><a href="#i234"><div class="op ok" id="i234" style="width:100;left:212;top:3728;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:32.965Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 234
+ :value 57}">2 broadcast 57</div></a><a href="#i236"><div class="op ok" id="i236" style="width:100;left:212;top:3760;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:33.037Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 236
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57]</div></a><a href="#i238"><div class="op ok" id="i238" style="width:100;left:212;top:3792;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:33.168Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 238
+ :value 58}">2 broadcast 58</div></a><a href="#i240"><div class="op ok" id="i240" style="width:100;left:212;top:3824;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:33.292Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 240
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58]</div></a><a href="#i242"><div class="op ok" id="i242" style="width:100;left:212;top:3856;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:33.316Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 242
+ :value 59}">2 broadcast 59</div></a><a href="#i244"><div class="op ok" id="i244" style="width:100;left:318;top:3888;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:33.515Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :read
+ :index 244
+ :value [0 2 6 9 17 19 42 45 47 52]}">3 read <br />[0 2 6 9 17 19 42 45 47 52]</div></a><a href="#i246"><div class="op ok" id="i246" style="width:100;left:212;top:3920;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:33.675Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 246
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59]</div></a><a href="#i248"><div class="op ok" id="i248" style="width:100;left:212;top:3952;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:33.700Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 248
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59]</div></a><a href="#i250"><div class="op ok" id="i250" style="width:100;left:212;top:3984;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:33.833Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 250
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59]</div></a><a href="#i252"><div class="op ok" id="i252" style="width:100;left:212;top:4016;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:33.909Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 252
+ :value 60}">2 broadcast 60</div></a><a href="#i254"><div class="op ok" id="i254" style="width:100;left:212;top:4048;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:34.084Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 254
+ :value 61}">2 broadcast 61</div></a><a href="#i256"><div class="op ok" id="i256" style="width:100;left:318;top:4080;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:34.130Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :read
+ :index 256
+ :value [0 2 6 9 17 19 42 45 47 52]}">3 read <br />[0 2 6 9 17 19 42 45 47 52]</div></a><a href="#i258"><div class="op ok" id="i258" style="width:100;left:212;top:4112;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:34.293Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 258
+ :value 62}">2 broadcast 62</div></a><a href="#i260"><div class="op ok" id="i260" style="width:100;left:212;top:4144;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:34.398Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 260
+ :value 63}">2 broadcast 63</div></a><a href="#i262"><div class="op ok" id="i262" style="width:100;left:212;top:4176;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:34.529Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 262
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63]</div></a><a href="#i264"><div class="op ok" id="i264" style="width:100;left:212;top:4208;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:34.644Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 264
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63]</div></a><a href="#i266"><div class="op ok" id="i266" style="width:100;left:212;top:4240;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:34.810Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 266
+ :value 64}">2 broadcast 64</div></a><a href="#i268"><div class="op ok" id="i268" style="width:100;left:318;top:4272;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:34.823Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :read
+ :index 268
+ :value [0 2 6 9 17 19 42 45 47 52]}">3 read <br />[0 2 6 9 17 19 42 45 47 52]</div></a><a href="#i270"><div class="op ok" id="i270" style="width:100;left:212;top:4304;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:34.858Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 270
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64]</div></a><a href="#i272"><div class="op ok" id="i272" style="width:100;left:212;top:4336;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:35.010Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 272
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64]</div></a><a href="#i274"><div class="op ok" id="i274" style="width:100;left:212;top:4368;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:35.085Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 274
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64]</div></a><a href="#i276"><div class="op ok" id="i276" style="width:100;left:212;top:4400;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:35.197Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 276
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64]</div></a><a href="#i278"><div class="op ok" id="i278" style="width:100;left:212;top:4432;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:35.310Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 278
+ :value 65}">2 broadcast 65</div></a><a href="#i280"><div class="op ok" id="i280" style="width:100;left:318;top:4464;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:35.464Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :read
+ :index 280
+ :value [0 2 6 9 17 19 42 45 47 52]}">3 read <br />[0 2 6 9 17 19 42 45 47 52]</div></a><a href="#i282"><div class="op ok" id="i282" style="width:100;left:212;top:4496;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:35.624Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 282
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65]</div></a><a href="#i284"><div class="op ok" id="i284" style="width:100;left:212;top:4528;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:35.687Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 284
+ :value 66}">2 broadcast 66</div></a><a href="#i286"><div class="op ok" id="i286" style="width:100;left:212;top:4560;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:35.803Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 286
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66]</div></a><a href="#i288"><div class="op ok" id="i288" style="width:100;left:212;top:4592;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:35.986Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 288
+ :value 67}">2 broadcast 67</div></a><a href="#i290"><div class="op ok" id="i290" style="width:100;left:212;top:4624;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:36.172Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 290
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67]</div></a><a href="#i292"><div class="op ok" id="i292" style="width:100;left:318;top:4656;height:16" title="Dur: 4 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:36.272Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :broadcast
+ :index 292
+ :value 68}">3 broadcast 68</div></a><a href="#i293"><div class="op info" id="i293" style="width:100;left:530;top:3376;height:2880" title="Dur: 5000 ms
+Err: :net-timeout
+Wall-clock Time: 2026-03-20T14:44:36.434Z
+
+Op:
+{:process 5
+ :type :info
+ :f :broadcast
+ :index 293
+ :error :net-timeout
+ :value 53}">5 broadcast 53</div></a><a href="#i296"><div class="op ok" id="i296" style="width:100;left:212;top:4720;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:36.482Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 296
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67]</div></a><a href="#i298"><div class="op ok" id="i298" style="width:100;left:212;top:4752;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:36.624Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 298
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67]</div></a><a href="#i299"><div class="op info" id="i299" style="width:100;left:954;top:3392;height:2864" title="Dur: 5000 ms
+Err: :net-timeout
+Wall-clock Time: 2026-03-20T14:44:36.627Z
+
+Op:
+{:process 11
+ :type :info
+ :f :broadcast
+ :index 299
+ :error :net-timeout
+ :value 54}">11 broadcast 54</div></a><a href="#i302"><div class="op ok" id="i302" style="width:100;left:212;top:4816;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:36.920Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 302
+ :value 69}">2 broadcast 69</div></a><a href="#i304"><div class="op ok" id="i304" style="width:100;left:318;top:4848;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:37.058Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :read
+ :index 304
+ :value [0 2 6 9 17 19 42 45 47 52 68]}">3 read <br />[0 2 6 9 17 19 42 45 47 52 68]</div></a><a href="#i306"><div class="op ok" id="i306" style="width:100;left:212;top:4880;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:37.109Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 306
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69]</div></a><a href="#i308"><div class="op ok" id="i308" style="width:100;left:212;top:4912;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:37.205Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 308
+ :value 70}">2 broadcast 70</div></a><a href="#i309"><div class="op fail" id="i309" style="width:100;left:424;top:3552;height:1392" title="Dur: 5000 ms
+Err: :net-timeout
+Wall-clock Time: 2026-03-20T14:44:37.263Z
+
+Op:
+{:process 4
+ :type :fail
+ :f :read
+ :index 309
+ :error :net-timeout
+ :value }">4 read </div></a><a href="#i311"><div class="op ok" id="i311" style="width:100;left:212;top:4960;height:16" title="Dur: 4 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:37.291Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 311
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70]</div></a><a href="#i313"><div class="op ok" id="i313" style="width:100;left:212;top:4992;height:16" title="Dur: 4 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:37.405Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 313
+ :value 71}">2 broadcast 71</div></a><a href="#i315"><div class="op ok" id="i315" style="width:100;left:212;top:5024;height:16" title="Dur: 9 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:37.573Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 315
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71]</div></a><a href="#i317"><div class="op ok" id="i317" style="width:100;left:318;top:5056;height:16" title="Dur: 8 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:37.581Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :broadcast
+ :index 317
+ :value 72}">3 broadcast 72</div></a><a href="#i320"><div class="op ok" id="i320" style="width:100;left:212;top:5104;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:37.810Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 320
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71]</div></a><a href="#i322"><div class="op ok" id="i322" style="width:100;left:212;top:5136;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:37.974Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 322
+ :value 74}">2 broadcast 74</div></a><a href="#i324"><div class="op ok" id="i324" style="width:100;left:212;top:5168;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:38.008Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 324
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74]</div></a><a href="#i326"><div class="op ok" id="i326" style="width:100;left:212;top:5200;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:38.180Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 326
+ :value 75}">2 broadcast 75</div></a><a href="#i328"><div class="op ok" id="i328" style="width:100;left:318;top:5232;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:38.250Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :read
+ :index 328
+ :value [0 2 6 9 17 19 42 45 47 52 68 72]}">3 read <br />[0 2 6 9 17 19 42 45 47 52 68 72]</div></a><a href="#i330"><div class="op ok" id="i330" style="width:100;left:212;top:5264;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:38.412Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 330
+ :value 76}">2 broadcast 76</div></a><a href="#i332"><div class="op ok" id="i332" style="width:100;left:212;top:5296;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:38.530Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 332
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74 75 76]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74 75 76]</div></a><a href="#i334"><div class="op ok" id="i334" style="width:100;left:212;top:5328;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:38.668Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 334
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74 75 76]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74 75 76]</div></a><a href="#i336"><div class="op ok" id="i336" style="width:100;left:212;top:5360;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:38.765Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 336
+ :value 77}">2 broadcast 77</div></a><a href="#i338"><div class="op ok" id="i338" style="width:100;left:212;top:5392;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:38.830Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 338
+ :value 78}">2 broadcast 78</div></a><a href="#i340"><div class="op ok" id="i340" style="width:100;left:318;top:5424;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:38.923Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :broadcast
+ :index 340
+ :value 79}">3 broadcast 79</div></a><a href="#i342"><div class="op ok" id="i342" style="width:100;left:212;top:5456;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:38.927Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 342
+ :value 80}">2 broadcast 80</div></a><a href="#i344"><div class="op ok" id="i344" style="width:100;left:212;top:5488;height:16" title="Dur: 3 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:38.930Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 344
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74 75 76 77 78 80]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74 75 76 77 78 80]</div></a><a href="#i346"><div class="op ok" id="i346" style="width:100;left:212;top:5520;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:38.998Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 346
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74 75 76 77 78 80]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74 75 76 77 78 80]</div></a><a href="#i348"><div class="op ok" id="i348" style="width:100;left:212;top:5552;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:39.074Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 348
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74 75 76 77 78 80]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74 75 76 77 78 80]</div></a><a href="#i350"><div class="op ok" id="i350" style="width:100;left:212;top:5584;height:16" title="Dur: 1 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:39.264Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 350
+ :value 81}">2 broadcast 81</div></a><a href="#i352"><div class="op ok" id="i352" style="width:100;left:318;top:5616;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:39.395Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :read
+ :index 352
+ :value [0 2 6 9 17 19 42 45 47 52 68 72 79]}">3 read <br />[0 2 6 9 17 19 42 45 47 52 68 72 79]</div></a><a href="#i354"><div class="op ok" id="i354" style="width:100;left:212;top:5648;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:39.418Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 354
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74 75 76 77 78 80 81]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74 75 76 77 78 80 81]</div></a><a href="#i356"><div class="op ok" id="i356" style="width:100;left:212;top:5680;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:39.549Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 356
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74 75 76 77 78 80 81]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74 75 76 77 78 80 81]</div></a><a href="#i358"><div class="op ok" id="i358" style="width:100;left:212;top:5712;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:39.730Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 358
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74 75 76 77 78 80 81]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74 75 76 77 78 80 81]</div></a><a href="#i360"><div class="op ok" id="i360" style="width:100;left:212;top:5744;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:39.894Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 360
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74 75 76 77 78 80 81]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74 75 76 77 78 80 81]</div></a><a href="#i362"><div class="op ok" id="i362" style="width:100;left:212;top:5776;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:40.073Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 362
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74 75 76 77 78 80 81]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74 75 76 77 78 80 81]</div></a><a href="#i364"><div class="op ok" id="i364" style="width:100;left:318;top:5808;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:40.097Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :read
+ :index 364
+ :value [0 2 6 9 17 19 42 45 47 52 68 72 79]}">3 read <br />[0 2 6 9 17 19 42 45 47 52 68 72 79]</div></a><a href="#i366"><div class="op ok" id="i366" style="width:100;left:212;top:5840;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:40.199Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 366
+ :value 82}">2 broadcast 82</div></a><a href="#i368"><div class="op ok" id="i368" style="width:100;left:212;top:5872;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:40.227Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 368
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74 75 76 77 78 80 81 82]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74 75 76 77 78 80 81 82]</div></a><a href="#i370"><div class="op ok" id="i370" style="width:100;left:212;top:5904;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:40.305Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 370
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74 75 76 77 78 80 81 82]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74 75 76 77 78 80 81 82]</div></a><a href="#i372"><div class="op ok" id="i372" style="width:100;left:212;top:5936;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:40.446Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 372
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74 75 76 77 78 80 81 82]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74 75 76 77 78 80 81 82]</div></a><a href="#i374"><div class="op ok" id="i374" style="width:100;left:212;top:5968;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:40.630Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :broadcast
+ :index 374
+ :value 83}">2 broadcast 83</div></a><a href="#i376"><div class="op ok" id="i376" style="width:100;left:318;top:6000;height:16" title="Dur: 2 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:40.670Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :read
+ :index 376
+ :value [0 2 6 9 17 19 42 45 47 52 68 72 79]}">3 read <br />[0 2 6 9 17 19 42 45 47 52 68 72 79]</div></a><a href="#i377"><div class="op fail" id="i377" style="width:100;left:848;top:4704;height:1328" title="Dur: 5000 ms
+Err: :net-timeout
+Wall-clock Time: 2026-03-20T14:44:41.436Z
+
+Op:
+{:process 10
+ :type :fail
+ :f :read
+ :index 377
+ :error :net-timeout
+ :value }">10 read </div></a><a href="#i378"><div class="op fail" id="i378" style="width:100;left:1060;top:4800;height:1248" title="Dur: 5000 ms
+Err: :net-timeout
+Wall-clock Time: 2026-03-20T14:44:41.779Z
+
+Op:
+{:process 16
+ :type :fail
+ :f :read
+ :index 378
+ :error :net-timeout
+ :value }">16 read </div></a><a href="#i379"><div class="op info" id="i379" style="width:100;left:424;top:5088;height:1168" title="Dur: 5002 ms
+Err: :net-timeout
+Wall-clock Time: 2026-03-20T14:44:42.733Z
+
+Op:
+{:process 4
+ :type :info
+ :f :broadcast
+ :index 379
+ :error :net-timeout
+ :value 73}">4 broadcast 73</div></a><a href="#i385"><div class="op ok" id="i385" style="width:100;left:318;top:6096;height:64" title="Dur: 4 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:52.741Z
+
+Op:
+{:process 3
+ :type :ok
+ :f :read
+ :index 385
+ :final? true
+ :value [0 2 6 9 17 19 42 45 47 52 68 72 79]}">3 read <br />[0 2 6 9 17 19 42 45 47 52 68 72 79]</div></a><a href="#i386"><div class="op ok" id="i386" style="width:100;left:212;top:6080;height:96" title="Dur: 7 ms
+Err: nil
+Wall-clock Time: 2026-03-20T14:44:52.743Z
+
+Op:
+{:process 2
+ :type :ok
+ :f :read
+ :index 386
+ :final? true
+ :value [0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74 75 76 77 78 80 81 82 83]}">2 read <br />[0 4 5 7 8 10 11 12 13 14 15 16 18 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 46 48 49 50 51 55 56 57 58 59 60 61 62 63 64 65 66 67 69 70 71 74 75 76 77 78 80 81 82 83]</div></a><a href="#i387"><div class="op fail" id="i387" style="width:100;left:1060;top:6112;height:80" title="Dur: 5000 ms
+Err: :net-timeout
+Wall-clock Time: 2026-03-20T14:44:57.737Z
+
+Op:
+{:process 16
+ :type :fail
+ :f :read
+ :index 387
+ :final? true
+ :error :net-timeout
+ :value }">16 read </div></a><a href="#i388"><div class="op fail" id="i388" style="width:100;left:742;top:6128;height:80" title="Dur: 5000 ms
+Err: :net-timeout
+Wall-clock Time: 2026-03-20T14:44:57.738Z
+
+Op:
+{:process 9
+ :type :fail
+ :f :read
+ :index 388
+ :final? true
+ :error :net-timeout
+ :value }">9 read </div></a><a href="#i389"><div class="op fail" id="i389" style="width:100;left:848;top:6144;height:80" title="Dur: 5000 ms
+Err: :net-timeout
+Wall-clock Time: 2026-03-20T14:44:57.738Z
+
+Op:
+{:process 10
+ :type :fail
+ :f :read
+ :index 389
+ :final? true
+ :error :net-timeout
+ :value }">10 read </div></a></div></body></html>

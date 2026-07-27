@@ -1,0 +1,420 @@
+ïÜev~énLÍÊ÷ÍŞsendïİmsgÍÜc2ÍÜn0ÀíÍÊ÷ÍŞechoãPlease echo 93ÍÊ÷ÍŞtype…ÍÊ÷Íàmsg_idı ~éü™ÑÍÊ÷ÍŞrecv¡ƒ‚Àí†ÍßerrorÍÊ÷ÍŞcodeÍÊ÷ÍŞtextãR*Unexpected exception handling (msg c2 n0 {"echo":"Please echo 93","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+ÍÊ÷Íãin_reply_toˆı ~é$ƒ €¡ÍÜc3ƒÀí„ãPlease echo 107†…ˆı ~é$¦”KŠ¡ƒ“Àí†ŒãR+Unexpected exception handling (msg c3 n0 {"echo":"Please echo 107","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆı ~é&CX&€¡ÍÜc4ƒÀí„ãPlease echo 90†…ˆı ~é&akŠ¡ƒ”Àí†ŒãR*Unexpected exception handling (msg c4 n0 {"echo":"Please echo 90","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆı ~é**¯&€¡ÍÜc5ƒÀí„ãPlease echo 50†…ˆı ~é*MŠıŠ¡	ƒ•Àí†ŒãR*Unexpected exception handling (msg c5 n0 {"echo":"Please echo 50","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆı ~é3²>€¡
+ÍÜc6ƒÀí„ãPlease echo 19†…ˆı ~é3Î“oŠ¡ƒ–Àí†ŒãR*Unexpected exception handling (msg c6 n0 {"echo":"Please echo 19","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆı ~é9œ¼B€¡ÍÜc7ƒÀí„ãPlease echo 30†…ˆı ~é9º'¨Š¡ƒ—Àí†ŒãR*Unexpected exception handling (msg c7 n0 {"echo":"Please echo 30","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆı ~éML˜€¡ÍÜc8ƒÀí„ãPlease echo 28†…ˆı ~éMeØ#Š¡ƒ˜Àí†ŒãR*Unexpected exception handling (msg c8 n0 {"echo":"Please echo 28","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆı  ~éT¡kI€¡ÍÜc9ƒÀí„ãPlease echo 60†…ˆı #~éT½/ÇŠ¡ƒ™Àí†ŒãR*Unexpected exception handling (msg c9 n0 {"echo":"Please echo 60","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆı $~éaÑTã€¡Íİc10ƒÀí„ãPlease echo 79†…ˆı '~éaîºBŠ¡ƒšÀí†ŒãR+Unexpected exception handling (msg c10 n0 {"echo":"Please echo 79","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆ	ı (~éo½,€¡Íİc11ƒÀí„ãPlease echo 6†…ˆı +~éoÖ† Š¡ƒ›Àí†ŒãR*Unexpected exception handling (msg c11 n0 {"echo":"Please echo 6","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆ
+ı ,~és%%n€¡Íİc12ƒÀí„ãPlease echo 111†…ˆı /~ésC‡Š¡ƒœÀí†ŒãR,Unexpected exception handling (msg c12 n0 {"echo":"Please echo 111","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆı 0~é€hÌ€¡Íİc13ƒÀí„ãPlease echo 82†…ˆı 3~é€/âxŠ¡ƒÀí†ŒãR+Unexpected exception handling (msg c13 n0 {"echo":"Please echo 82","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆı 4~é„şKº€¡Íİc14ƒÀí„ãPlease echo 84†…ˆı 7~é…ø£Š¡ƒÀí†ŒãR+Unexpected exception handling (msg c14 n0 {"echo":"Please echo 84","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆı 8~é”p­–€¡Íİc15ƒÀí„ãPlease echo 91†…ˆı ;~é”Š³”Š¡ƒŸÀí†ŒãR+Unexpected exception handling (msg c15 n0 {"echo":"Please echo 91","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆı <~éšáÓt€¡Íİc16ƒÀí„ãPlease echo 96†…ˆı ?~éšùöŠ¡ƒÌ Àí†ŒãR+Unexpected exception handling (msg c16 n0 {"echo":"Please echo 96","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆı P@~é§œë€¡ Íİc17ƒÀí„ãPlease echo 21†…ˆı PC~é§¸ŸÚŠ¡!ƒÌ!Àí†ŒãR+Unexpected exception handling (msg c17 n0 {"echo":"Please echo 21","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆı PD~éº-‡€¡"Íİc18ƒÀí„ãPlease echo 21†…ˆı PG~éºfâŠ¡#ƒÌ"Àí†ŒãR+Unexpected exception handling (msg c18 n0 {"echo":"Please echo 21","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆı PH~éÅ»G€¡$Íİc19ƒÀí„ãPlease echo 18†…ˆı PK~éÅÔFŠ¡%ƒÌ#Àí†ŒãR+Unexpected exception handling (msg c19 n0 {"echo":"Please echo 18","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆı PL~éË¥³h€¡&Íİc20ƒÀí„ãPlease echo 35†…ˆı PO~éË¿ãŠ¡'ƒÌ$Àí†ŒãR+Unexpected exception handling (msg c20 n0 {"echo":"Please echo 35","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆı PP~é×.V€¡(Íİc21ƒÀí„ãPlease echo 97†…ˆı PS~é×5ÙÿŠ¡)ƒÌ%Àí†ŒãR+Unexpected exception handling (msg c21 n0 {"echo":"Please echo 97","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆı PT~éë)pk€¡*Íİc22ƒÀí„ãPlease echo 13†…ˆı PW~éëBz«Š¡+ƒÌ&Àí†ŒãR+Unexpected exception handling (msg c22 n0 {"echo":"Please echo 13","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆı PX~ê ¸Q€¡,Íİc23ƒÀí„ãPlease echo 92†…ˆı P[~ê ĞİSŠ¡-ƒÌ'Àí†ŒãR+Unexpected exception handling (msg c23 n0 {"echo":"Please echo 92","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆı P\~ê)€¡.Íİc24ƒÀí„ãPlease echo 60†…ˆı P_~ê6|sŠ¡/ƒÌ(Àí†ŒãR+Unexpected exception handling (msg c24 n0 {"echo":"Please echo 60","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆı P`~ê‰±c€¡0Íİc25ƒÀí„ãPlease echo 77†…ˆı Pc~ê¡²Š¡1ƒÌ)Àí†ŒãR+Unexpected exception handling (msg c25 n0 {"echo":"Please echo 77","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆı Pd~ê!¡ğ¸€¡2Íİc26ƒÀí„ãPlease echo 113†…ˆı Pg~ê!»ïŠ¡3ƒÌ*Àí†ŒãR,Unexpected exception handling (msg c26 n0 {"echo":"Please echo 113","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆı Ph~ê*Ç¥€¡4Íİc27ƒÀí„ãPlease echo 38†…ˆı Pk~ê*è’âŠ¡5ƒÌ+Àí†ŒãR+Unexpected exception handling (msg c27 n0 {"echo":"Please echo 38","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆı Pl~ê5ŞHê€¡6Íİc28ƒÀí„ãPlease echo 75†…ˆı Po~ê5øxŠ¡7ƒÌ,Àí†ŒãR+Unexpected exception handling (msg c28 n0 {"echo":"Please echo 75","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆı Pp~ê:–rX€¡8Íİc29ƒÀí„ãPlease echo 34†…ˆı Ps~ê:±‘ÓŠ¡9ƒÌ-Àí†ŒãR+Unexpected exception handling (msg c29 n0 {"echo":"Please echo 34","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆı Pt~êA-*€¡:Íİc30ƒÀí„ãPlease echo 12†…ˆı Pw~êAE¸Š¡;ƒÌ.Àí†ŒãR+Unexpected exception handling (msg c30 n0 {"echo":"Please echo 12","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆı Px~êX©Ü_€¡<Íİc31ƒÀí„ãPlease echo 49†…ˆı P{~êXÄ?Š¡=ƒÌ/Àí†ŒãR+Unexpected exception handling (msg c31 n0 {"echo":"Please echo 49","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆı P|~êk®a?€¡>Íİc32ƒÀí„ãPlease echo 54†…ˆı P~êkÄç´Š¡?ƒÌ0Àí†ŒãR+Unexpected exception handling (msg c32 n0 {"echo":"Please echo 54","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆı P€~êx}t€¡P@Íİc33ƒÀí„ãPlease echo 98†…ˆı Pƒ~êxš8)Š¡PAƒÌ1Àí†ŒãR+Unexpected exception handling (msg c33 n0 {"echo":"Please echo 98","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆ ı P„~ê„êäÿ€¡PBÍİc34ƒÀí„ãPlease echo 69†…ˆı P‡~ê…{bŠ¡PCƒÌ2Àí†ŒãR+Unexpected exception handling (msg c34 n0 {"echo":"Please echo 69","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆ!ı Pˆ~ê”U€¡PDÍİc35ƒÀí„ãPlease echo 81†…ˆı P‹~ê”V%Š¡PEƒÌ3Àí†ŒãR+Unexpected exception handling (msg c35 n0 {"echo":"Please echo 81","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆ"ı PŒ~ê©øˆ"€¡PFÍİc36ƒÀí„ãPlease echo 123†…ˆı P~êªğŠ¡PGƒÌ4Àí†ŒãR,Unexpected exception handling (msg c36 n0 {"echo":"Please echo 123","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆ#ı P~ê±óà€¡PHÍİc37ƒÀí„ãPlease echo 24†…ˆı P“~ê±/¥Š¡PIƒÌ5Àí†ŒãR+Unexpected exception handling (msg c37 n0 {"echo":"Please echo 24","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆ$ı P”~ê¾Òy€¡PJÍİc38ƒÀí„ãPlease echo 0†…ˆı P—~ê¾ëŸrŠ¡PKƒÌ6Àí†ŒãR*Unexpected exception handling (msg c38 n0 {"echo":"Please echo 0","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆ%ı P˜~êĞ^F€¡PLÍİc39ƒÀí„ãPlease echo 74†…ˆı P›~êĞuö´Š¡PMƒÌ7Àí†ŒãR+Unexpected exception handling (msg c39 n0 {"echo":"Please echo 74","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆ&ı Pœ~êÕŠ¦˜€¡PNÍİc40ƒÀí„ãPlease echo 37†…ˆı PŸ~êÕ¢ ÛŠ¡POƒÌ8Àí†ŒãR+Unexpected exception handling (msg c40 n0 {"echo":"Please echo 37","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆ'ı P ~êâ^˜€¡PPÍİc41ƒÀí„ãPlease echo 71†…ˆı P£~êâ!r¸Š¡PQƒÌ9Àí†ŒãR+Unexpected exception handling (msg c41 n0 {"echo":"Please echo 71","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆ(ı P¤~êñ°p#€¡PRÍİc42ƒÀí„ãPlease echo 0†…ˆı P§~êñË®Š¡PSƒÌ:Àí†ŒãR*Unexpected exception handling (msg c42 n0 {"echo":"Please echo 0","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆ)ı P¨~êöXII€¡PTÍİc43ƒÀí„ãPlease echo 104†…ˆı P«~êöuÚÚŠ¡PUƒÌ;Àí†ŒãR,Unexpected exception handling (msg c43 n0 {"echo":"Please echo 104","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆ*ı P¬~êşó€¡PVÍİc44ƒÀí„ãPlease echo 94†…ˆı P¯~êÿ¶åŠ¡PWƒÌ<Àí†ŒãR+Unexpected exception handling (msg c44 n0 {"echo":"Please echo 94","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆ+ı P°~ëk€¡PXÍİc45ƒÀí„ãPlease echo 110†…ˆı P³~ë*kŠ¡PYƒÌ=Àí†ŒãR,Unexpected exception handling (msg c45 n0 {"echo":"Please echo 110","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆ,ı P´~ë:î}€¡PZÍİc46ƒÀí„ãPlease echo 96†…ˆı P·~ëS&4Š¡P[ƒÌ>Àí†ŒãR+Unexpected exception handling (msg c46 n0 {"echo":"Please echo 96","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆ-ı P¸~ëü)€¡P\Íİc47ƒÀí„ãPlease echo 36†…ˆı P»~ë7´Š¡P]ƒÌ?Àí†ŒãR+Unexpected exception handling (msg c47 n0 {"echo":"Please echo 36","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆ.ı P¼~ëT–€¡P^Íİc48ƒÀí„ãPlease echo 2†…ˆı P¿~ën%Š¡P_ƒÌP@Àí†ŒãR*Unexpected exception handling (msg c48 n0 {"echo":"Please echo 2","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆ/ı PÀ~ë(Î€¡P`Íİc49ƒÀí„ãPlease echo 115†…ˆı PÃ~ë(çTôŠ¡PaƒÌPAÀí†ŒãR,Unexpected exception handling (msg c49 n0 {"echo":"Please echo 115","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆ0ı PÄ~ë7h½š€¡PbÍİc50ƒÀí„ãPlease echo 82†…ˆı PÇ~ë7}Ï¶Š¡PcƒÌPBÀí†ŒãR+Unexpected exception handling (msg c50 n0 {"echo":"Please echo 82","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆ1ı PÈ~ë@¦i€¡PdÍİc51ƒÀí„ãPlease echo 96†…ˆı PË~ë@§‰)Š¡PeƒÌPCÀí†ŒãR+Unexpected exception handling (msg c51 n0 {"echo":"Please echo 96","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆ2ı PÌ~ëKsã€¡PfÍİc52ƒÀí„ãPlease echo 91†…ˆı PÏ~ëK‰…ÃŠ¡PgƒÌPDÀí†ŒãR+Unexpected exception handling (msg c52 n0 {"echo":"Please echo 91","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆ3ı PĞ~ëb
+S€¡PhÍİc53ƒÀí„ãPlease echo 102†…ˆı PÓ~ëb#j<Š¡PiƒÌPEÀí†ŒãR,Unexpected exception handling (msg c53 n0 {"echo":"Please echo 102","type":"echo","msg_id":1}) : java.lang.RuntimeException: No handler for echo
+java.lang.RuntimeException: No handler for echo
+	at lab.Node.handleRequest(Node.java:95)
+	at lab.Node.handleMessage(Node.java:71)
+	at lab.Node.lambda$run$0(Node.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+‘ˆ4ı
